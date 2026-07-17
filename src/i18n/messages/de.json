@@ -191,6 +191,13 @@
     "reel5Subtitle": "Memorial Erfolgsgeschichte",
     "followMore": "Folgen Sie uns für mehr"
   },
+  "youtube": {
+    "sectionTitle": "YouTube",
+    "title": "Video-Inhalte",
+    "subtitle": "Expertenvideos zu Ernährung und Gesundheit",
+    "video1Title": "Was ist die ketogene Diät?",
+    "video2Title": "Worauf sollten Schilddrüsen- und PCOS-Patienten bei der Ernährung achten?"
+  },
   "faq": {
     "sectionTitle": "Häufig gestellte Fragen",
     "title": "Ihre Fragen beantwortet",
@@ -217,6 +224,7 @@
     "contact": "Kontakt",
     "hospitals": "Krankenhäuser",
     "followUs": "Folgen Sie uns",
+    "memorialProfile": "Memorial Arztprofil",
     "rights": "Alle Rechte vorbehalten."
   },
   "contact": {
@@ -232,6 +240,8 @@
     "whatsapp": "WhatsApp-Nachricht",
     "whatsappDesc": "Kontaktieren Sie uns per WhatsApp für schnelle Termine.",
     "mapTitle": "Standort",
+    "memorialProfile": "Memorial Arztprofil",
+    "linkedinDesc": "Berufliches Netzwerk und Karriere",
     "formSuccess": "Ihre Nachricht wurde empfangen."
   },
   "blog": {

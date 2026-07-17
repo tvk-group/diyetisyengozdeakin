@@ -3,7 +3,7 @@ import { Section, SectionHeader } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { SITE_CONFIG, HOSPITALS } from "@/lib/constants";
-import { Mail, MapPin, MessageCircle, Phone, Clock } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone, Clock, AtSign, Link2, ExternalLink } from "lucide-react";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -73,6 +73,42 @@ export default async function ContactPage({ params }: Props) {
                 </div>
               </div>
             ))}
+            <a
+              href={SITE_CONFIG.memorialProfile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 rounded-2xl bg-memorial-red/5 p-6 transition-colors hover:bg-memorial-red/10"
+            >
+              <ExternalLink className="h-6 w-6 text-memorial-red" />
+              <div>
+                <p className="font-medium text-navy">{t("memorialProfile")}</p>
+                <p className="text-sm text-navy/50">memorial.com.tr</p>
+              </div>
+            </a>
+            <a
+              href={SITE_CONFIG.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 rounded-2xl bg-light-gray p-6 transition-colors hover:bg-emerald/5"
+            >
+              <AtSign className="h-6 w-6 text-memorial-red" />
+              <div>
+                <p className="font-medium text-navy">Instagram</p>
+                <p className="text-sm text-navy/50">{SITE_CONFIG.instagramHandle}</p>
+              </div>
+            </a>
+            <a
+              href={SITE_CONFIG.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 rounded-2xl bg-light-gray p-6 transition-colors hover:bg-emerald/5"
+            >
+              <Link2 className="h-6 w-6 text-memorial-red" />
+              <div>
+                <p className="font-medium text-navy">LinkedIn</p>
+                <p className="text-sm text-navy/50">{t("linkedinDesc")}</p>
+              </div>
+            </a>
             <Button href={SITE_CONFIG.whatsapp} className="w-full sm:w-auto">
               <MessageCircle className="h-4 w-4" />
               {t("whatsapp")}

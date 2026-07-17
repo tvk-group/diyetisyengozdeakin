@@ -191,6 +191,13 @@
     "reel5Subtitle": "Histoire de réussite Memorial",
     "followMore": "Suivez-nous pour en voir plus"
   },
+  "youtube": {
+    "sectionTitle": "YouTube",
+    "title": "Contenus vidéo",
+    "subtitle": "Vidéos d'expert sur la nutrition et la santé",
+    "video1Title": "Qu'est-ce que le régime cétogène ?",
+    "video2Title": "À quoi doivent faire attention les patients thyroïdiens et atteints de SOPK en matière de nutrition ?"
+  },
   "faq": {
     "sectionTitle": "Questions fréquentes",
     "title": "Vos questions, nos réponses",
@@ -217,6 +224,7 @@
     "contact": "Contact",
     "hospitals": "Hôpitaux",
     "followUs": "Suivez-nous",
+    "memorialProfile": "Profil médecin Memorial",
     "rights": "Tous droits réservés."
   },
   "contact": {
@@ -232,6 +240,8 @@
     "whatsapp": "Écrire sur WhatsApp",
     "whatsappDesc": "Contactez-nous sur WhatsApp pour un rendez-vous rapide.",
     "mapTitle": "Emplacement",
+    "memorialProfile": "Profil médecin Memorial",
+    "linkedinDesc": "Réseau professionnel et carrière",
     "formSuccess": "Votre message a été reçu."
   },
   "blog": {

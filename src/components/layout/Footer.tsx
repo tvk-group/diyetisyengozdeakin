@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { AtSign, Mail, MapPin, Phone } from "lucide-react";
+import { AtSign, ExternalLink, Link2, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/brand/Logo";
 import { SITE_CONFIG, HOSPITALS } from "@/lib/constants";
@@ -54,6 +54,15 @@ export async function Footer() {
                 </li>
               ))}
             </ul>
+            <a
+              href={SITE_CONFIG.memorialProfile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-sm text-white/60 transition-colors hover:text-white"
+            >
+              <ExternalLink className="h-4 w-4 text-memorial-red" />
+              {t("memorialProfile")}
+            </a>
           </div>
 
           <div>
@@ -71,10 +80,19 @@ export async function Footer() {
                   {SITE_CONFIG.phone}
                 </a>
               </li>
+            </ul>
+            <h3 className="mb-3 mt-6 font-heading font-semibold">{t("followUs")}</h3>
+            <ul className="space-y-3">
               <li>
                 <a href={SITE_CONFIG.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-white/60 hover:text-white">
                   <AtSign className="h-4 w-4 text-memorial-red" />
                   {SITE_CONFIG.instagramHandle}
+                </a>
+              </li>
+              <li>
+                <a href={SITE_CONFIG.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-white/60 hover:text-white">
+                  <Link2 className="h-4 w-4 text-memorial-red" />
+                  LinkedIn
                 </a>
               </li>
             </ul>

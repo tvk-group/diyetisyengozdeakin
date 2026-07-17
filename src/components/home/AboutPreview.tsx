@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { ProfileImage } from "@/components/ui/ProfileImage";
 import { GOZDE_IMAGES } from "@/lib/images";
+import { SITE_CONFIG } from "@/lib/constants";
 import { ArrowRight, Award, Brain, Heart, Stethoscope } from "lucide-react";
 
 export async function AboutPreview() {
@@ -31,10 +32,15 @@ export async function AboutPreview() {
               </span>
             ))}
           </div>
-          <p className="mb-2 flex items-center gap-2 text-sm font-medium text-memorial-red">
+          <a
+            href={SITE_CONFIG.memorialProfile}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mb-2 inline-flex items-center gap-2 text-sm font-medium text-memorial-red transition-colors hover:text-memorial-red/80"
+          >
             <Award className="h-4 w-4" />
             {t("hospital")}
-          </p>
+          </a>
           <p className="mb-4 text-navy/70">{t("bio1")}</p>
           <p className="mb-4 text-navy/70">{t("bio2")}</p>
           <p className="text-navy/70">{t("bio3")}</p>

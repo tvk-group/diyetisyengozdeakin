@@ -191,6 +191,13 @@
     "reel5Subtitle": "Memorial success story",
     "followMore": "Follow for more"
   },
+  "youtube": {
+    "sectionTitle": "YouTube",
+    "title": "Video Content",
+    "subtitle": "Expert videos on nutrition and health",
+    "video1Title": "What Is the Ketogenic Diet?",
+    "video2Title": "What Should Thyroid and PCOS Patients Pay Attention to in Nutrition?"
+  },
   "faq": {
     "sectionTitle": "Frequently Asked Questions",
     "title": "Your Questions Answered",
@@ -217,6 +224,7 @@
     "contact": "Contact",
     "hospitals": "Hospitals",
     "followUs": "Follow Us",
+    "memorialProfile": "Memorial Doctor Profile",
     "rights": "All rights reserved."
   },
   "contact": {
@@ -232,6 +240,8 @@
     "whatsapp": "Message on WhatsApp",
     "whatsappDesc": "Reach us on WhatsApp for quick appointments and questions.",
     "mapTitle": "Location",
+    "memorialProfile": "Memorial Doctor Profile",
+    "linkedinDesc": "Professional network and career",
     "formSuccess": "Your message was received. We will respond shortly."
   },
   "blog": {
