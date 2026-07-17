@@ -20,7 +20,11 @@
     "subtitle": "Metabolik iyileşme, insülin direncinin dengelenmesi ve kan biyokimyasının iyileştirilmesini hedefleyen bütüncül beslenme ve psikoloji yaklaşımı.",
     "ctaAppointment": "Randevu Al",
     "ctaOnline": "Online Danışmanlık",
-    "ctaWhatsapp": "WhatsApp"
+    "ctaWhatsapp": "WhatsApp",
+    "yearsExperience": "8+",
+    "yearsExperienceLabel": "Yıllık Deneyim",
+    "memorialLabel": "Memorial",
+    "memorialSub": "Sağlık Grubu"
   },
   "about": {
     "sectionTitle": "Gözde Akın Kimdir?",
@@ -39,7 +43,29 @@
     "mission": "Misyon",
     "missionText": "İnsanlara fayda sağlamayı merkeze alan, bilim temelli ve sürdürülebilir sağlık çözümleri sunmak.",
     "vision": "Vizyon",
-    "visionText": "Beslenme ve psikolojiyi birleştirerek Türkiye'nin en güvenilir fonksiyonel tıp beslenme platformunu oluşturmak."
+    "visionText": "Beslenme ve psikolojiyi birleştirerek Türkiye'nin en güvenilir fonksiyonel tıp beslenme platformunu oluşturmak.",
+    "educationItems": [
+      "Okan Üniversitesi — Beslenme ve Diyetetik (2.)",
+      "Okan Üniversitesi — Sağlık Bilimleri Fakültesi (3.)",
+      "Okan Üniversitesi — Psikoloji Çift Anadal",
+      "Okan Üniversitesi — Beslenme ve Diyetetik Yüksek Lisans",
+      "Kanada — Uluslararası Eğitim"
+    ],
+    "experienceItems": [
+      "2017–2023 — Memorial Ataşehir Hastanesi (Sorumlu Diyetisyen)",
+      "Güncel — Memorial Göztepe Hastanesi",
+      "Atlas Üniversitesi — Beslenme ve Psikoloji Dersleri",
+      "Bahçeşehir Üniversitesi — Sağlık Psikolojisi Dersleri",
+      "We5 Concept Etiler — Sporcu Beslenmesi"
+    ],
+    "stat1Value": "2.",
+    "stat1Label": "Beslenme ve Diyetetik",
+    "stat2Value": "3.",
+    "stat2Label": "Sağlık Bilimleri Fakültesi",
+    "stat3Value": "8+",
+    "stat3Label": "Yıllık Klinik Deneyim",
+    "stat4Value": "2",
+    "stat4Label": "Lisans Diploması"
   },
   "whyChoose": {
     "sectionTitle": "Neden Gözde Akın?",
@@ -99,7 +125,26 @@
     "underweight": "Zayıf",
     "normal": "Normal",
     "overweight": "Fazla Kilolu",
-    "obese": "Obez"
+    "obese": "Obez",
+    "bodyFat": "Vücut Yağ Oranı",
+    "bodyFatDesc": "Navy formülü ile tahmini yağ oranı",
+    "pregnancy": "Gebelik Kilo",
+    "pregnancyDesc": "Gebelik haftasına göre önerilen kilo aralığı",
+    "activity": "Aktivite",
+    "sedentary": "Hareketsiz",
+    "light": "Hafif",
+    "moderate": "Orta",
+    "active": "Aktif",
+    "veryActive": "Çok aktif",
+    "kcalUnit": "kcal",
+    "waist": "Bel (cm)",
+    "neck": "Boyun (cm)",
+    "weeksPregnant": "Gebelik haftası",
+    "prePregnancyWeight": "Gebelik öncesi kilo (kg)",
+    "bodyFatResult": "Tahmini vücut yağ oranı",
+    "pregnancyResult": "Önerilen kilo aralığı",
+    "waterPerDay": "Günlük önerilen su tüketimi",
+    "bodyFatFemaleNote": "Kadınlar için klinik değerlendirme önerilir"
   },
   "journey": {
     "sectionTitle": "Danışan Yolculuğu",
@@ -183,7 +228,11 @@
     "message": "Mesajınız",
     "send": "Gönder",
     "workingHours": "Çalışma Saatleri",
-    "workingHoursValue": "Pazartesi – Cuma: 09:00 – 18:00"
+    "workingHoursValue": "Pazartesi – Cuma: 09:00 – 18:00",
+    "whatsapp": "WhatsApp ile Yazın",
+    "whatsappDesc": "Hızlı randevu ve sorularınız için WhatsApp üzerinden ulaşın.",
+    "mapTitle": "Konum",
+    "formSuccess": "Mesajınız alındı. En kısa sürede dönüş yapacağız."
   },
   "blog": {
     "title": "Blog",
@@ -192,7 +241,8 @@
     "categories": "Kategoriler",
     "allPosts": "Tüm Yazılar",
     "author": "Yazar",
-    "medicalReview": "Tıbbi İnceleme"
+    "medicalReview": "Tıbbi İnceleme",
+    "minRead": "dk okuma"
   },
   "services": {
     "title": "Hizmetler",
@@ -201,7 +251,9 @@
     "treatment": "Tedavi Süreci",
     "timeline": "Zaman Çizelgesi",
     "results": "Beklenen Sonuçlar",
-    "bookNow": "Randevu Al"
+    "bookNow": "Randevu Al",
+    "science": "Bilimsel Yaklaşım",
+    "faq": "Sık Sorulan Sorular"
   },
   "onlineConsultation": {
     "title": "Online Danışmanlık",
@@ -211,5 +263,10 @@
     "worldwide": "Dünya Genelinde",
     "personalized": "Kişiselleştirilmiş Plan",
     "followUp": "Düzenli Takip"
+  },
+  "site": {
+    "expertDietitian": "Uzman Diyetisyen & Psikolog",
+    "memorialGroup": "Sağlık Grubu",
+    "imageAlt": "Uzman Diyetisyen & Psikolog Gözde Akın — Memorial Sağlık Grubu"
   }
 }

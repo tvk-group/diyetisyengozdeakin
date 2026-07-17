@@ -10,6 +10,7 @@ import { GOZDE_IMAGES } from "@/lib/images";
 
 export function Hero() {
   const t = useTranslations("hero");
+  const site = useTranslations("site");
 
   return (
     <section className="gradient-hero relative overflow-hidden">
@@ -55,23 +56,23 @@ export function Hero() {
             <div className="glass-card relative aspect-[4/5] overflow-hidden rounded-3xl">
               <ProfileImage
                 src={GOZDE_IMAGES.heroMemorial}
-                alt="Uzman Diyetisyen & Psikolog Gözde Akın — Memorial Sağlık Grubu"
+                alt={site("imageAlt")}
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/80 to-transparent p-6 pt-24">
                 <p className="font-heading text-xl font-bold text-white">Gözde Akın</p>
-                <p className="text-sm text-white/80">Uzman Diyetisyen & Psikolog</p>
+                <p className="text-sm text-white/80">{site("expertDietitian")}</p>
               </div>
             </div>
             <div className="absolute -bottom-4 -left-4 rounded-2xl bg-white p-4 shadow-xl">
-              <p className="text-2xl font-bold text-emerald">8+</p>
-              <p className="text-xs text-navy/60">Yıllık Deneyim</p>
+              <p className="text-2xl font-bold text-emerald">{t("yearsExperience")}</p>
+              <p className="text-xs text-navy/60">{t("yearsExperienceLabel")}</p>
             </div>
             <div className="absolute -right-4 -top-4 rounded-2xl bg-memorial-red p-4 text-white shadow-xl">
-              <p className="text-2xl font-bold">Memorial</p>
-              <p className="text-xs text-white/80">Sağlık Grubu</p>
+              <p className="text-2xl font-bold">{t("memorialLabel")}</p>
+              <p className="text-xs text-white/80">{t("memorialSub")}</p>
             </div>
           </motion.div>
         </div>

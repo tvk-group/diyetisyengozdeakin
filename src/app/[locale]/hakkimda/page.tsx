@@ -18,22 +18,10 @@ export default async function AboutPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("about");
+  const site = await getTranslations("site");
 
-  const education = [
-    "Okan Üniversitesi — Beslenme ve Diyetetik (2.)",
-    "Okan Üniversitesi — Sağlık Bilimleri Fakültesi (3.)",
-    "Okan Üniversitesi — Psikoloji Çift Anadal",
-    "Okan Üniversitesi — Beslenme ve Diyetetik Yüksek Lisans",
-    "Kanada — Uluslararası Eğitim",
-  ];
-
-  const experience = [
-    "2017–2023 — Memorial Ataşehir Hastanesi (Sorumlu Diyetisyen)",
-    "Güncel — Memorial Göztepe Hastanesi",
-    "Atlas Üniversitesi — Beslenme ve Psikoloji Dersleri",
-    "Bahçeşehir Üniversitesi — Sağlık Psikolojisi Dersleri",
-    "We5 Concept Etiler — Sporcu Beslenmesi",
-  ];
+  const education = t.raw("educationItems") as string[];
+  const experience = t.raw("experienceItems") as string[];
 
   return (
     <>
@@ -52,7 +40,7 @@ export default async function AboutPage({ params }: Props) {
             <div className="relative aspect-[4/5]">
               <ProfileImage
                 src={GOZDE_IMAGES.profileOffice}
-                alt="Uzman Diyetisyen & Psikolog Gözde Akın"
+                alt={site("imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />

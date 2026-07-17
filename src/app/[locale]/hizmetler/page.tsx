@@ -1,7 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { Button } from "@/components/ui/Button";
 import { SERVICE_SLUGS } from "@/lib/constants";
 import { ArrowRight } from "lucide-react";
 

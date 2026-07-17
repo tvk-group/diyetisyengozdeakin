@@ -1,12 +1,16 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
+import { ContactForm } from "@/components/contact/ContactForm";
 import { SITE_CONFIG, HOSPITALS } from "@/lib/constants";
-import { Mail, MapPin, Phone, Clock } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone, Clock } from "lucide-react";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+const MAP_EMBED_URL =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.0!2d29.07!3d40.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zTWVtb3JpYWwgR8O2enRlcGUgSGFzdGFuZXNp!5e0!3m2!1str!2str!4v1";
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
@@ -27,6 +31,18 @@ export default async function ContactPage({ params }: Props) {
       <Section>
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="space-y-6">
+            <a
+              href={SITE_CONFIG.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 rounded-2xl bg-emerald/10 p-6 transition-colors hover:bg-emerald/15"
+            >
+              <MessageCircle className="h-6 w-6 text-emerald" />
+              <div>
+                <p className="font-medium text-navy">{t("whatsapp")}</p>
+                <p className="text-sm text-navy/60">{t("whatsappDesc")}</p>
+              </div>
+            </a>
             <a href={`mailto:${SITE_CONFIG.email}`} className="flex items-center gap-4 rounded-2xl bg-light-gray p-6 transition-colors hover:bg-emerald/5">
               <Mail className="h-6 w-6 text-memorial-red" />
               <div>
@@ -57,29 +73,30 @@ export default async function ContactPage({ params }: Props) {
                 </div>
               </div>
             ))}
+            <Button href={SITE_CONFIG.whatsapp} className="w-full sm:w-auto">
+              <MessageCircle className="h-4 w-4" />
+              {t("whatsapp")}
+            </Button>
           </div>
 
-          <form className="glass-card rounded-3xl p-8">
-            <div className="space-y-4">
-              <div>
-                <label className="mb-1 block text-sm font-medium text-navy/70">{t("name")}</label>
-                <input type="text" className="w-full rounded-xl border border-navy/10 px-4 py-3 outline-none focus:border-emerald focus:ring-2 focus:ring-emerald/20" />
-              </div>
-              <div>
-                <label className="mb-1 block text-sm font-medium text-navy/70">{t("email")}</label>
-                <input type="email" className="w-full rounded-xl border border-navy/10 px-4 py-3 outline-none focus:border-emerald focus:ring-2 focus:ring-emerald/20" />
-              </div>
-              <div>
-                <label className="mb-1 block text-sm font-medium text-navy/70">{t("phone")}</label>
-                <input type="tel" className="w-full rounded-xl border border-navy/10 px-4 py-3 outline-none focus:border-emerald focus:ring-2 focus:ring-emerald/20" />
-              </div>
-              <div>
-                <label className="mb-1 block text-sm font-medium text-navy/70">{t("message")}</label>
-                <textarea rows={4} className="w-full rounded-xl border border-navy/10 px-4 py-3 outline-none focus:border-emerald focus:ring-2 focus:ring-emerald/20" />
-              </div>
-              <Button type="submit" className="w-full">{t("send")}</Button>
-            </div>
-          </form>
+          <ContactForm />
+        </div>
+      </Section>
+
+      <Section variant="light">
+        <h2 className="font-heading mb-6 text-2xl font-bold text-navy">{t("mapTitle")}</h2>
+        <div className="overflow-hidden rounded-3xl shadow-lg">
+          <iframe
+            title={t("mapTitle")}
+            src={MAP_EMBED_URL}
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full"
+          />
         </div>
       </Section>
     </>
