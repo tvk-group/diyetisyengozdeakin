@@ -9,5 +9,5 @@ export default function RootLayout({ children }: Props) {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://diyetisyengozdeakin.com"),
+  metadataBase: new URL("https://www.diyetisyengozdeakin.com"),
 };

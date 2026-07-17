@@ -2,7 +2,7 @@ export const SITE_CONFIG = {
   name: "Uzman Diyetisyen & Psikolog Gözde Akın",
   shortName: "Dyt. Gözde Akın",
   domain: "diyetisyengozdeakin.com",
-  url: "https://diyetisyengozdeakin.com",
+  url: "https://www.diyetisyengozdeakin.com",
   email: "dytgozdeakin@gmail.com",
   phone: "+90 (0) 538 935 92 14",
   phoneRaw: "+905389359214",

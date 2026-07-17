@@ -7,7 +7,6 @@ import { SITE_CONFIG, HOSPITALS } from "@/lib/constants";
 export async function Footer() {
   const t = await getTranslations("footer");
   const nav = await getTranslations("nav");
-  const site = await getTranslations("site");
 
   const links = [
     { href: "/", label: nav("home") },
