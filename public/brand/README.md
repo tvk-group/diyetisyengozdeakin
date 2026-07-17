@@ -1,16 +1,18 @@
 # Marka Dosyaları — Logo & Banner
 
-Orijinal logo ve banner dosyalarınızı buraya yükleyin. Site önce PNG/JPG dosyalarını arar; yoksa SVG fallback kullanır.
+## Aktif dosyalar (orijinal)
 
-| Dosya | Önerilen boyut | Kullanım |
-|-------|----------------|----------|
-| `logo.png` veya `logo.svg` | 480×520 veya vektör | Header, footer, PWA |
-| `logo-mark.png` | 120×120 | Küçük ikon |
-| `banner.png` veya `banner.svg` | 1200×900 | Ana sayfa marka bandı |
+| Dosya | Boyut | Kullanım |
+|-------|-------|----------|
+| `logo.png` | 1536×1024 | Header, footer, PWA ikon kaynağı |
+| `banner.png` | 1536×1024 | Ana sayfa marka bandı |
 
-**Renk paleti (marka):**
-- Orman yeşili: `#3D5245`
-- Şampanya altını: `#C5A46D`
-- Krem arka plan: `#FAF8F4`
+## Opsiyonel
 
-Dosyaları aynı isimle değiştirdiğinizde commit + deploy yeterlidir.
+| Dosya | Açıklama |
+|-------|----------|
+| `logo-web.png` | Otomatik küçültülmüş logo yedeği |
+| `banner-web.png` | Otomatik küçültülmüş banner yedeği |
+| `*.svg` | Eski vektör yedekleri (kullanılmıyor) |
+
+Güncelleme: `logo.png` veya `banner.png` dosyalarını değiştirin → commit → deploy.

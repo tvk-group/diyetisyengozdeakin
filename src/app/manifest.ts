@@ -34,7 +34,7 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     screenshots: [
       {
-        src: "/brand/banner.svg",
+        src: "/brand/banner.png",
         sizes: "1200x630",
         type: "image/jpeg",
         form_factor: "wide",

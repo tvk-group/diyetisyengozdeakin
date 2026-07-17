@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { BRAND_IMAGES } from "@/lib/brand";
+import { BRAND_DIMENSIONS, BRAND_IMAGES } from "@/lib/brand";
 import { cn } from "@/lib/utils";
 
 type LogoProps = {
@@ -28,21 +28,24 @@ export function Logo({
   subtitleClassName,
   dark = false,
 }: LogoProps) {
-  const src = variant === "full" ? BRAND_IMAGES.logo : BRAND_IMAGES.logoMark;
-  const size = variant === "full" ? { w: 160, h: 174 } : { w: 40, h: 40 };
+  const { width, height } = BRAND_DIMENSIONS.logo;
+  const isFull = variant === "full";
 
   const content = (
     <div className={cn("flex items-center gap-3", className)}>
       <Image
-        src={src}
+        src={BRAND_IMAGES.logo}
         alt="Gözde Akın"
-        width={size.w}
-        height={size.h}
-        className={cn(variant === "mark" ? "h-10 w-10 shrink-0" : "h-auto w-36", imageClassName)}
+        width={width}
+        height={height}
+        className={cn(
+          isFull ? "h-auto w-44 max-w-full sm:w-52" : "h-10 w-auto max-w-[140px] object-contain",
+          imageClassName
+        )}
         priority
-        unoptimized
+        sizes={isFull ? "(max-width: 640px) 176px, 208px" : "140px"}
       />
-      {showName && variant === "mark" && (
+      {showName && !isFull && (
         <div className={cn("min-w-0", nameClassName)}>
           <p
             className={cn(
