@@ -219,7 +219,9 @@
     "button": "Randevu Al"
   },
   "footer": {
-    "description": "Uzman Diyetisyen & Psikolog Gözde Akın — Memorial Sağlık Grubu",
+    "descriptionLine1": "Uzman Diyetisyen & Psikolog",
+    "descriptionLine2": "Gözde Akın",
+    "descriptionLine3": "Memorial Sağlık Grubu",
     "quickLinks": "Hızlı Bağlantılar",
     "contact": "İletişim",
     "hospitals": "Hastaneler",

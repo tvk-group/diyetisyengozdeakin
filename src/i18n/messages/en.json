@@ -219,7 +219,9 @@
     "button": "Book Appointment"
   },
   "footer": {
-    "description": "Expert Dietitian & Psychologist Gözde Akın — Memorial Health Group",
+    "descriptionLine1": "Expert Dietitian & Psychologist",
+    "descriptionLine2": "Gözde Akın",
+    "descriptionLine3": "Memorial Health Group",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "hospitals": "Hospitals",

@@ -219,7 +219,9 @@
     "button": "Termin buchen"
   },
   "footer": {
-    "description": "Expertin für Ernährung & Psychologin Gözde Akın — Memorial Gesundheitsgruppe",
+    "descriptionLine1": "Expertin für Ernährung & Psychologin",
+    "descriptionLine2": "Gözde Akın",
+    "descriptionLine3": "Memorial Gesundheitsgruppe",
     "quickLinks": "Schnelllinks",
     "contact": "Kontakt",
     "hospitals": "Krankenhäuser",
