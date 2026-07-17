@@ -10,8 +10,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Sürdürülebilir beslenme, fonksiyonel tıp ve psikoloji destekli danışmanlık. Memorial İstanbul.",
     start_url: "/",
     display: "standalone",
-    background_color: "#FFFFFF",
-    theme_color: "#1B2A4A",
+    background_color: "#FAF8F4",
+    theme_color: "#3D5245",
     orientation: "portrait-primary",
     scope: "/",
     lang: "tr",
@@ -34,7 +34,7 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     screenshots: [
       {
-        src: "/images/gozde/profile.jpg",
+        src: "/brand/banner.svg",
         sizes: "1200x630",
         type: "image/jpeg",
         form_factor: "wide",

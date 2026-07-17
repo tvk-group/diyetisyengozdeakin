@@ -32,7 +32,7 @@ export function generateStaticParams() {
 
 export function generateViewport(): Viewport {
   return {
-    themeColor: "#1B2A4A",
+    themeColor: "#3D5245",
     width: "device-width",
     initialScale: 1,
     viewportFit: "cover",

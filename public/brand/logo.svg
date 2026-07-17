@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" fill="none" role="img" aria-label="Gözde Ak1n  Uzman Diyetisyen ve Psikolog">
+  <rect width="480" height="520" fill="#FAF8F4"/>
+  <g transform="translate(140 36)">
+    <path d="M95 8c-28 0-50 22-50 50 0 16 7 30 18 39" stroke="#3D5245" stroke-width="7" stroke-linecap="round"/>
+    <path d="M45 58c0-22 18-40 40-40" stroke="#3D5245" stroke-width="7" stroke-linecap="round"/>
+    <path d="M24 98c12 16 30 26 50 26" stroke="#3D5245" stroke-width="7" stroke-linecap="round"/>
+    <path d="M18 112c10-16 26-26 46-26" stroke="#3D5245" stroke-width="5" stroke-linecap="round"/>
+    <path d="M58 42c12-6 24-6 36 0" stroke="#C5A46D" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="68" cy="62" r="3.5" fill="#C5A46D"/>
+    <path d="M62 70c6 8 14 12 22 12" stroke="#C5A46D" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M30 112c12-18 28-28 48-28" stroke="#3D5245" stroke-width="3" stroke-linecap="round"/>
+    <path d="M26 118l8-14M32 114l-6 12" stroke="#3D5245" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M118 18 L158 118" stroke="#C5A46D" stroke-width="9" stroke-linecap="round"/>
+    <path d="M136 18 L96 118" stroke="#C5A46D" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="240" y="210" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="42" letter-spacing="8" fill="#3D5245">GÖZDE</text>
+  <text x="240" y="258" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="42" letter-spacing="8" fill="#C5A46D">AKIN</text>
+  <text x="240" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3" fill="#3D5245">UZMAN D0YET0SYEN &amp; PS0KOLOG</text>
+  <line x1="120" y1="330" x2="200" y2="330" stroke="#C5A46D" stroke-width="1"/>
+  <line x1="280" y1="330" x2="360" y2="330" stroke="#C5A46D" stroke-width="1"/>
+  <circle cx="232" cy="330" r="5" fill="#3D5245"/>
+  <circle cx="248" cy="330" r="5" fill="#C5A46D"/>
+  <text x="240" y="365" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="1" fill="#3D5245">Bilimsel. Bütünsel. <tspan fill="#C5A46D">Sürdürülebilir.</tspan></text>
+</svg>

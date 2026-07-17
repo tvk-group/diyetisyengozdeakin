@@ -1,7 +1,10 @@
-const CACHE_NAME = "gozde-akin-v1";
+const CACHE_NAME = "gozde-akin-v2";
 
 const PRECACHE_URLS = [
   "/offline.html",
+  "/brand/logo.svg",
+  "/brand/logo-mark.svg",
+  "/brand/banner.svg",
   "/icons/icon-192.png",
   "/icons/icon-512.png",
   "/icons/apple-touch-icon.png",
@@ -32,7 +35,7 @@ function isNavigationRequest(request) {
 function isStaticAsset(url) {
   return (
     url.pathname.startsWith("/_next/static/") ||
-    url.pathname.startsWith("/icons/") ||
+    url.pathname.startsWith("/brand/") ||
     url.pathname.startsWith("/images/") ||
     url.pathname.endsWith(".woff2")
   );
