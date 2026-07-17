@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
+import { Logo } from "@/components/brand/Logo";
 import { SITE_CONFIG, LOCALE_NAMES, type Locale } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { routing } from "@/i18n/routing";
@@ -29,15 +30,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-navy/5 bg-white/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-memorial-red text-sm font-bold text-white">
-            GA
-          </div>
-          <div className="hidden sm:block">
-            <p className="font-heading text-sm font-bold text-navy">Gözde Akın</p>
-            <p className="text-xs text-navy/50">{site("expertDietitian")}</p>
-          </div>
-        </Link>
+        <Logo subtitle={site("expertDietitian")} />
 
         <nav className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => (

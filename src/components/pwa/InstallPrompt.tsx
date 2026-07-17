@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Download, X } from "lucide-react";
+import Image from "next/image";
+import { BRAND_IMAGES } from "@/lib/brand";
 import { cn } from "@/lib/utils";
 
 const DISMISS_KEY = "gozde-pwa-install-dismissed";
@@ -90,8 +92,8 @@ export function InstallPrompt() {
       </button>
 
       <div className="flex gap-3 pr-6">
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-memorial-red text-sm font-bold text-white">
-          GA
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[#FAF8F4]">
+          <Image src={BRAND_IMAGES.logoMark} alt="" width={48} height={48} unoptimized />
         </div>
         <div>
           <p className="font-heading font-semibold text-navy">{t("installTitle")}</p>

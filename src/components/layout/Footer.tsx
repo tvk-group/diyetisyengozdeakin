@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { AtSign, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import { Logo } from "@/components/brand/Logo";
 import { SITE_CONFIG, HOSPITALS } from "@/lib/constants";
 
 export async function Footer() {
@@ -21,15 +22,12 @@ export async function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-memorial-red text-sm font-bold">
-                GA
-              </div>
-              <div>
-                <p className="font-heading font-bold">Gözde Akın</p>
-                <p className="text-xs text-white/60">{site("expertDietitian")}</p>
-              </div>
-            </div>
+            <Logo
+              href="/"
+              dark
+              subtitle={site("expertDietitian")}
+              nameClassName="hidden sm:block"
+            />
             <p className="text-sm text-white/60">{t("description")}</p>
           </div>
 
