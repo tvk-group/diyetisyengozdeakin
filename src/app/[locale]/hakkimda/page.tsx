@@ -1,0 +1,114 @@
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Section, SectionHeader } from "@/components/ui/Section";
+import { Award, BookOpen, Globe, GraduationCap, Heart, Target } from "lucide-react";
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "about" });
+  return { title: `${t("title")} | Gözde Akın` };
+}
+
+export default async function AboutPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("about");
+
+  const education = [
+    "Okan Üniversitesi — Beslenme ve Diyetetik (2.)",
+    "Okan Üniversitesi — Sağlık Bilimleri Fakültesi (3.)",
+    "Okan Üniversitesi — Psikoloji Çift Anadal",
+    "Okan Üniversitesi — Beslenme ve Diyetetik Yüksek Lisans",
+    "Kanada — Uluslararası Eğitim",
+  ];
+
+  const experience = [
+    "2017–2023 — Memorial Ataşehir Hastanesi (Sorumlu Diyetisyen)",
+    "Güncel — Memorial Göztepe Hastanesi",
+    "Atlas Üniversitesi — Beslenme ve Psikoloji Dersleri",
+    "Bahçeşehir Üniversitesi — Sağlık Psikolojisi Dersleri",
+    "We5 Concept Etiler — Sporcu Beslenmesi",
+  ];
+
+  return (
+    <>
+      <Section variant="gradient" className="!py-16">
+        <SectionHeader badge={t("sectionTitle")} title={t("title")} subtitle={t("intro")} />
+      </Section>
+
+      <Section>
+        <div className="grid gap-12 lg:grid-cols-2">
+          <div className="space-y-6">
+            <p className="text-lg text-navy/70">{t("bio1")}</p>
+            <p className="text-navy/70">{t("bio2")}</p>
+            <p className="text-navy/70">{t("bio3")}</p>
+          </div>
+          <div className="glass-card rounded-3xl p-8">
+            <div className="mb-6 flex h-48 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald/10 to-navy/10">
+              <div className="text-center">
+                <div className="mx-auto mb-3 flex h-24 w-24 items-center justify-center rounded-full bg-white text-3xl font-bold text-navy shadow-lg">GA</div>
+                <p className="font-heading font-bold text-navy">Gözde Akın</p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {[t("role1"), t("role2"), t("role3")].map((role) => (
+                <span key={role} className="rounded-full bg-emerald/10 px-3 py-1 text-xs font-medium text-emerald">{role}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section variant="light">
+        <div className="grid gap-8 md:grid-cols-2">
+          <div className="glass-card rounded-3xl p-8">
+            <div className="mb-4 flex items-center gap-3">
+              <GraduationCap className="h-6 w-6 text-memorial-red" />
+              <h2 className="font-heading text-xl font-bold text-navy">{t("education")}</h2>
+            </div>
+            <ul className="space-y-3">
+              {education.map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-navy/70">
+                  <BookOpen className="mt-0.5 h-4 w-4 shrink-0 text-emerald" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="glass-card rounded-3xl p-8">
+            <div className="mb-4 flex items-center gap-3">
+              <Award className="h-6 w-6 text-memorial-red" />
+              <h2 className="font-heading text-xl font-bold text-navy">{t("experience")}</h2>
+            </div>
+            <ul className="space-y-3">
+              {experience.map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-navy/70">
+                  <Globe className="mt-0.5 h-4 w-4 shrink-0 text-emerald" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="grid gap-8 md:grid-cols-2">
+          <div className="rounded-3xl bg-navy p-8 text-white">
+            <Target className="mb-4 h-8 w-8 text-gold" />
+            <h2 className="font-heading mb-2 text-xl font-bold">{t("mission")}</h2>
+            <p className="text-white/70">{t("missionText")}</p>
+          </div>
+          <div className="rounded-3xl bg-emerald p-8 text-white">
+            <Heart className="mb-4 h-8 w-8 text-white" />
+            <h2 className="font-heading mb-2 text-xl font-bold">{t("vision")}</h2>
+            <p className="text-white/70">{t("visionText")}</p>
+          </div>
+        </div>
+      </Section>
+    </>
+  );
+}
