@@ -12,6 +12,74 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "karniyarik-otu-tohumu",
+    category: "nutrition",
+    publishedAt: "2025-04-15",
+    readingTime: 7,
+    thumbnail: "/images/gozde/reel-karniyarik-otu.jpg",
+    tags: ["karnıyarıkotu", "lif", "sindirim", "gözdeakın"],
+    title: {
+      tr: "Karnıyarık Otu Tohumu: Sanıldığı Kadar 'Masum' mu?",
+      en: "Psyllium Husk: Is It as 'Innocent' as It Seems?",
+      de: "Flohsamenschalen: So harmlos wie gedacht?",
+      fr: "Cosse de psyllium : aussi inoffensive qu'on le croit ?",
+      ru: "Шелуха подорожника: так ли она безобидна?",
+      ar: "بذور القطونة: هل هي بريئة كما يُظن؟",
+    },
+    excerpt: {
+      tr: "Doğal bir destek ama bilinçsiz kullanımı bazı riskler taşıyabilir. Faydaları, yan etkileri ve dikkat edilmesi gerekenler.",
+      en: "A natural support, but uninformed use can carry risks. Benefits, side effects, and precautions.",
+      de: "Eine natürliche Unterstützung, aber unbewusste Anwendung kann Risiken bergen.",
+      fr: "Un soutien naturel, mais une utilisation inconsciente peut comporter des risques.",
+      ru: "Натуральная поддержка, но неосознанное использование может нести риски.",
+      ar: "دعم طبيعي، لكن الاستخدام غير الواعي قد يحمل مخاطر.",
+    },
+    content: {
+      tr: `Karnıyarık otu tohumu (psyllium), son yıllarda sindirim sağlığı ve kilo yönetiminde sıkça önerilen doğal bir lif kaynağıdır. Peki herkes için uygun mu?
+
+**Faydaları**
+- Kabızlık ve düzensiz bağırsak hareketlerinde destek
+- Tokluk hissini artırarak porsiyon kontrolüne yardımcı olabilir
+- Kan kolesterolü ve kan şekeri üzerinde olumlu etkiler (kişiye özel)
+
+**Yan Etkileri**
+- Yetersiz su ile alındığında şişkinlik, gaz ve hatta bağırsak tıkanıklığı riski
+- Bazı kişilerde alerjik reaksiyonlar
+- İlaç emilimini etkileyebilir — ilaçlarla birlikte kullanımda dikkat
+
+**Kimler Dikkatli Olmalı?**
+- İnflamatuar bağırsak hastalığı olanlar
+- Daha önce bağırsak tıkanıklığı geçirenler
+- Düzenli ilaç kullananlar (özellikle diyabet ve tansiyon ilaçları)
+
+**Sonuç**
+Karnıyarık otu tohumu doğru kullanıldığında faydalı bir destek olabilir; ancak "doğal = herkes için güvenli" anlamına gelmez. Kullanmadan önce uzman diyetisyeninizden kişisel değerlendirme almanız önerilir.`,
+      en: `Psyllium husk has become a popular natural fiber source for digestive health and weight management. But is it suitable for everyone?
+
+**Benefits**
+- Support for constipation and irregular bowel movements
+- May help portion control by increasing satiety
+- Positive effects on cholesterol and blood sugar (individual)
+
+**Side Effects**
+- Bloating, gas, and even bowel obstruction risk without adequate water
+- Allergic reactions in some individuals
+- May affect medication absorption
+
+**Who Should Be Cautious?**
+- Those with inflammatory bowel disease
+- History of bowel obstruction
+- Regular medication users (especially diabetes and blood pressure)
+
+**Conclusion**
+Psyllium can be beneficial when used correctly, but "natural" doesn't mean safe for everyone. Consult your dietitian before use.`,
+      de: `Flohsamenschalen können bei richtiger Anwendung hilfreich sein — "natürlich" bedeutet nicht für jeden sicher.`,
+      fr: `Le psyllium peut être bénéfique lorsqu'il est bien utilisé — "naturel" ne signifie pas sûr pour tous.`,
+      ru: `Подорожник может быть полезен при правильном применении — «натуральный» не значит безопасный для всех.`,
+      ar: `القطونة قد تكون مفيدة عند الاستخدام الصحيح — "طبيعي" لا يعني آمناً للجميع.`,
+    },
+  },
+  {
     slug: "kilo-vermeyi-hizlandiran-5-basit-kural",
     category: "nutrition",
     publishedAt: "2025-04-10",

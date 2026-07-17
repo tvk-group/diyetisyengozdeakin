@@ -118,8 +118,17 @@
     "step6Desc": "Sürdürülebilir yaşam alışkanlıkları"
   },
   "testimonials": {
-    "sectionTitle": "Danışan Yorumları",
-    "title": "Gerçek Hikayeler, Gerçek Sonuçlar"
+    "sectionTitle": "Başarı Hikayeleri",
+    "title": "Gerçek Hikayeler, Gerçek Sonuçlar",
+    "subtitle": "Memorial Sağlık Grubu'nda ekip çalışmasıyla elde edilen ölçülebilir sonuçlar",
+    "storyTitle": "Ekip İşi, Sağlıklı Değişim!",
+    "storyTagline": "Diyetisyen, hemşire ve doktor iş birliği",
+    "storyDesc": "Planlı takip, doğru beslenme, uygun tedavi ve sürekli destek ile danışanımızın en iyi versiyonuna birlikte ulaştık. Memorial Tanita vücut analizi ile ilerleme düzenli olarak takip edildi.",
+    "weightLoss": "Kilo Kaybı",
+    "fatRatio": "Yağ Oranı",
+    "teamSupport": "Uzman Ekip",
+    "storyQuote": "Planlı takip, doğru beslenme, uygun tedavi, sürekli destek! En iyi versiyonunuza birlikte ulaştık.",
+    "disclaimer": "Sonuçlar kişiden kişiye değişir. Bireysel değerlendirme ve takip esastır."
   },
   "instagram": {
     "sectionTitle": "Instagram",
@@ -131,6 +140,10 @@
     "reel2Subtitle": "İnsülin direnci",
     "reel3Title": "Kilo Vermeyi Hızlandıran 5 Kural",
     "reel3Subtitle": "Basit ve sürdürülebilir alışkanlıklar",
+    "reel4Title": "Karnıyarık Otu Tohumu",
+    "reel4Subtitle": "Sanıldığı kadar masum mu?",
+    "reel5Title": "Ekip İşi, Sağlıklı Değişim",
+    "reel5Subtitle": "Memorial başarı hikayesi",
     "followMore": "Daha fazlası için takip edin"
   },
   "faq": {

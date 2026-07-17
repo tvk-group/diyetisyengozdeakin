@@ -118,8 +118,17 @@
     "step6Desc": "Habitudes de vie durables"
   },
   "testimonials": {
-    "sectionTitle": "Témoignages de patients",
-    "title": "Histoires réelles, résultats réels"
+    "sectionTitle": "Histoires de réussite",
+    "title": "Histoires réelles, résultats réels",
+    "subtitle": "Résultats mesurables grâce au travail d'équipe au Memorial",
+    "storyTitle": "Travail d'équipe, changement sain !",
+    "storyTagline": "Collaboration diététicienne, infirmière et médecin",
+    "storyDesc": "Suivi planifié, nutrition adaptée et soutien continu pour atteindre la meilleure version de notre patient.",
+    "weightLoss": "Perte de poids",
+    "fatRatio": "Taux de graisse",
+    "teamSupport": "Équipe experte",
+    "storyQuote": "Suivi planifié, bonne nutrition, soutien continu !",
+    "disclaimer": "Les résultats varient selon les individus."
   },
   "instagram": {
     "sectionTitle": "Instagram",
@@ -131,6 +140,10 @@
     "reel2Subtitle": "Résistance à l'insuline",
     "reel3Title": "5 règles pour accélérer la perte de poids",
     "reel3Subtitle": "Habitudes simples et durables",
+    "reel4Title": "Cosse de psyllium",
+    "reel4Subtitle": "Aussi inoffensive qu'on le croit ?",
+    "reel5Title": "Travail d'équipe, changement sain",
+    "reel5Subtitle": "Histoire de réussite Memorial",
     "followMore": "Suivez-nous pour en voir plus"
   },
   "faq": {

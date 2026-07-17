@@ -4,6 +4,7 @@ import { WhyChoose } from "@/components/home/WhyChoose";
 import { Expertise } from "@/components/home/Expertise";
 import { BMICalculator } from "@/components/home/BMICalculator";
 import { PatientJourney } from "@/components/home/PatientJourney";
+import { SuccessStories } from "@/components/home/SuccessStories";
 import { InstagramReels } from "@/components/home/InstagramReels";
 import { FAQ } from "@/components/home/FAQ";
 import { CTA } from "@/components/home/CTA";
@@ -53,6 +54,7 @@ export default async function HomePage({ params }: Props) {
       <Expertise />
       <BMICalculator />
       <PatientJourney />
+      <SuccessStories />
       <InstagramReels />
       <FAQ />
       <CTA />

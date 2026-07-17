@@ -118,8 +118,17 @@
     "step6Desc": "Nachhaltige Lebensgewohnheiten"
   },
   "testimonials": {
-    "sectionTitle": "Patientenbewertungen",
-    "title": "Echte Geschichten, echte Ergebnisse"
+    "sectionTitle": "Erfolgsgeschichten",
+    "title": "Echte Geschichten, echte Ergebnisse",
+    "subtitle": "Messbare Ergebnisse durch Teamarbeit in der Memorial Gesundheitsgruppe",
+    "storyTitle": "Teamarbeit, gesunde Veränderung!",
+    "storyTagline": "Zusammenarbeit von Ernährungsberaterin, Pflegekraft und Arzt",
+    "storyDesc": "Durch geplante Nachsorge, richtige Ernährung und kontinuierliche Unterstützung erreichten wir gemeinsam die beste Version unseres Klienten.",
+    "weightLoss": "Gewichtsverlust",
+    "fatRatio": "Fettanteil",
+    "teamSupport": "Expertenteam",
+    "storyQuote": "Geplante Nachsorge, richtige Ernährung, kontinuierliche Unterstützung!",
+    "disclaimer": "Ergebnisse variieren individuell."
   },
   "instagram": {
     "sectionTitle": "Instagram",
@@ -131,6 +140,10 @@
     "reel2Subtitle": "Insulinresistenz",
     "reel3Title": "5 Regeln für schnelleren Gewichtsverlust",
     "reel3Subtitle": "Einfache, nachhaltige Gewohnheiten",
+    "reel4Title": "Flohsamenschalen",
+    "reel4Subtitle": "So harmlos wie gedacht?",
+    "reel5Title": "Teamarbeit, gesunde Veränderung",
+    "reel5Subtitle": "Memorial Erfolgsgeschichte",
     "followMore": "Folgen Sie uns für mehr"
   },
   "faq": {

@@ -15,9 +15,36 @@ export const GOZDE_IMAGES = {
   reelInsulinDirenci: "/images/gozde/reel-insulin-direnci.jpg",
   /** Instagram Reel: 5 Basit Kural */
   reel5Kural: "/images/gozde/reel-5-basit-kural.jpg",
+  /** Instagram Reel: Karnıyarık Otu Tohumu */
+  reelKarniyarikOtu: "/images/gozde/reel-karniyarik-otu.jpg",
+  /** Success story: Ekip İşi, Sağlıklı Değişim */
+  successEkipIsi: "/images/gozde/success-ekip-isi.jpg",
 } as const;
 
-export const INSTAGRAM_REELS = [
+export type InstagramReelItem = {
+  id: string;
+  image: string;
+  titleKey: string;
+  subtitleKey: string;
+  blogSlug?: string;
+  href?: string;
+};
+
+export const INSTAGRAM_REELS: InstagramReelItem[] = [
+  {
+    id: "karniyarik-otu",
+    image: GOZDE_IMAGES.reelKarniyarikOtu,
+    blogSlug: "karniyarik-otu-tohumu",
+    titleKey: "reel4Title",
+    subtitleKey: "reel4Subtitle",
+  },
+  {
+    id: "ekip-isi",
+    image: GOZDE_IMAGES.successEkipIsi,
+    href: "#basari-hikayeleri",
+    titleKey: "reel5Title",
+    subtitleKey: "reel5Subtitle",
+  },
   {
     id: "5-basit-kural",
     image: GOZDE_IMAGES.reel5Kural,
@@ -39,4 +66,4 @@ export const INSTAGRAM_REELS = [
     titleKey: "reel1Title",
     subtitleKey: "reel1Subtitle",
   },
-] as const;
+];

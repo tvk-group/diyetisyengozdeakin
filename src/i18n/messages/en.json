@@ -118,8 +118,17 @@
     "step6Desc": "Sustainable lifestyle habits"
   },
   "testimonials": {
-    "sectionTitle": "Patient Testimonials",
-    "title": "Real Stories, Real Results"
+    "sectionTitle": "Success Stories",
+    "title": "Real Stories, Real Results",
+    "subtitle": "Measurable results achieved through teamwork at Memorial Health Group",
+    "storyTitle": "Teamwork, Healthy Change!",
+    "storyTagline": "Dietitian, nurse and doctor collaboration",
+    "storyDesc": "Through planned follow-up, proper nutrition, appropriate treatment and continuous support, we reached our client's best version together. Progress was tracked with Memorial Tanita body analysis.",
+    "weightLoss": "Weight Loss",
+    "fatRatio": "Fat Ratio",
+    "teamSupport": "Expert Team",
+    "storyQuote": "Planned follow-up, proper nutrition, appropriate treatment, continuous support! We reached your best version together.",
+    "disclaimer": "Results vary by individual. Personal assessment and follow-up are essential."
   },
   "instagram": {
     "sectionTitle": "Instagram",
@@ -131,6 +140,10 @@
     "reel2Subtitle": "Insulin resistance",
     "reel3Title": "5 Rules to Speed Up Weight Loss",
     "reel3Subtitle": "Simple, sustainable habits",
+    "reel4Title": "Psyllium Husk Seed",
+    "reel4Subtitle": "As innocent as it seems?",
+    "reel5Title": "Teamwork, Healthy Change",
+    "reel5Subtitle": "Memorial success story",
     "followMore": "Follow for more"
   },
   "faq": {
