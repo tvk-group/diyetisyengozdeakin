@@ -268,5 +268,18 @@
     "expertDietitian": "Uzman Diyetisyen & Psikolog",
     "memorialGroup": "Sağlık Grubu",
     "imageAlt": "Uzman Diyetisyen & Psikolog Gözde Akın — Memorial Sağlık Grubu"
+  },
+  "pwa": {
+    "tabBarLabel": "Ana navigasyon",
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "calculators": "Hesapla",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "installTitle": "Uygulamayı Yükle",
+    "installDesc": "Ana ekrana ekleyerek hızlı erişim ve çevrimdışı okuma.",
+    "installButton": "Ana Ekrana Ekle",
+    "iosHint": "Safari'de Paylaş → Ana Ekrana Ekle seçeneğini kullanın.",
+    "dismiss": "Kapat"
   }
 }

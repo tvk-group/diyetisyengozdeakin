@@ -268,5 +268,18 @@
     "expertDietitian": "Ernährungsberaterin & Psychologin",
     "memorialGroup": "Gesundheitsgruppe",
     "imageAlt": "Ernährungsberaterin & Psychologin Gözde Akın — Memorial"
+  },
+  "pwa": {
+    "tabBarLabel": "Hauptnavigation",
+    "home": "Start",
+    "services": "Leistungen",
+    "calculators": "Tools",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "installTitle": "App installieren",
+    "installDesc": "Zum Startbildschirm hinzufügen für schnellen Zugriff.",
+    "installButton": "Zum Startbildschirm",
+    "iosHint": "In Safari: Teilen → Zum Home-Bildschirm.",
+    "dismiss": "Schließen"
   }
 }
