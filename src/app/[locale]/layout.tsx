@@ -44,11 +44,16 @@ export async function generateMetadata({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "meta" });
   const alternates = getAlternates();
   const ogImage = `${SITE_CONFIG.url}/og-image.jpg`;
+  const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
+
   return {
     title: t("title"),
     description: t("description"),
     metadataBase: new URL(SITE_CONFIG.url),
     alternates,
+    ...(googleVerification
+      ? { verification: { google: googleVerification } }
+      : {}),
     openGraph: {
       title: t("title"),
       description: t("description"),

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Uzman Diyetisyen & Psikolog Gözde Akın | Memorial İstanbul",
-    "description": "Fonksiyonel tıp, gebelikte beslenme, PCOS, diyabet ve insülin direnci uzmanı. Memorial Göztepe ve Ataşehir Hastaneleri'nde sürdürülebilir beslenme danışmanlığı."
+    "title": "Diyetisyen Gözde Akın | Uzman Diyetisyen & Psikolog — Memorial İstanbul",
+    "description": "Diyetisyen Gözde Akın — fonksiyonel tıp, gebelikte beslenme, PCOS, diyabet ve insülin direnci uzmanı. Memorial Göztepe ve Ataşehir Hastaneleri'nde sürdürülebilir beslenme danışmanlığı."
   },
   "nav": {
     "home": "Ana Sayfa",
@@ -196,7 +196,10 @@
     "title": "Video İçerikler",
     "subtitle": "Beslenme ve sağlık üzerine uzman videolar",
     "video1Title": "Ketojenik Diyet Nedir?",
-    "video2Title": "Tiroid ve PKOS Hastaları Beslenmede Nelere Dikkat Etmelidir?"
+    "video2Title": "Tiroid ve PKOS Hastaları Beslenmede Nelere Dikkat Etmelidir?",
+    "video3Title": "Diyet Önerileri — Stresle Başa Çıkma",
+    "video4Title": "Söz Velilerimizde",
+    "video5Title": "Sadece Diyet Yaparak Öbeziteden Kurtulmak Mümkün mü?"
   },
   "faq": {
     "sectionTitle": "Sıkça Sorulan Sorular",

@@ -20,11 +20,31 @@ export const YOUTUBE_VIDEOS = [
     id: "keto",
     videoId: "mwosCkjruR0",
     titleKey: "video1Title",
+    format: "video",
   },
   {
     id: "thyroid-pcos",
     videoId: "ganblUqgs4s",
     titleKey: "video2Title",
+    format: "video",
+  },
+  {
+    id: "stress-diet",
+    videoId: "edWS0pHs2v0",
+    titleKey: "video3Title",
+    format: "video",
+  },
+  {
+    id: "parent-testimonial",
+    videoId: "v_C0M4N_eGs",
+    titleKey: "video4Title",
+    format: "short",
+  },
+  {
+    id: "obesity-diet-only",
+    videoId: "G4CjbyXts-g",
+    titleKey: "video5Title",
+    format: "video",
   },
 ] as const;
 
