@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { BRAND_DIMENSIONS, BRAND_IMAGES } from "@/lib/brand";
+import { BRAND_DIMENSIONS, BRAND_IMAGES, BRAND_IMAGE_QUALITY } from "@/lib/brand";
 import { cn } from "@/lib/utils";
 
 type LogoSize = "nav" | "default" | "full";
@@ -21,15 +21,15 @@ type LogoProps = {
 };
 
 const SIZE_CLASSES: Record<LogoSize, string> = {
-  nav: "h-16 w-auto max-w-[220px] object-contain sm:h-20 sm:max-w-[280px]",
-  default: "h-10 w-auto max-w-[140px] object-contain",
-  full: "h-auto w-44 max-w-full sm:w-52",
+  nav: "brand-image-crisp h-16 w-auto max-w-[240px] object-contain sm:h-[88px] sm:max-w-[320px]",
+  default: "brand-image-crisp h-10 w-auto max-w-[160px] object-contain",
+  full: "brand-image-crisp h-auto w-48 max-w-full sm:w-56",
 };
 
 const SIZE_SIZES: Record<LogoSize, string> = {
-  nav: "(max-width: 640px) 220px, 280px",
-  default: "140px",
-  full: "(max-width: 640px) 176px, 208px",
+  nav: "(max-width: 640px) 240px, 320px",
+  default: "160px",
+  full: "(max-width: 640px) 192px, 224px",
 };
 
 export function Logo({
@@ -57,6 +57,7 @@ export function Logo({
         alt="Gözde Akın"
         width={width}
         height={height}
+        quality={BRAND_IMAGE_QUALITY}
         className={cn(SIZE_CLASSES[resolvedSize], imageClassName)}
         priority={resolvedSize === "nav"}
         sizes={SIZE_SIZES[resolvedSize]}
