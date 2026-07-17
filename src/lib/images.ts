@@ -8,7 +8,7 @@ export const GOZDE_IMAGES = {
   /** Office / consultation portrait — warm, approachable */
   profileOffice: "/images/gozde/gozde-office-portrait.jpg",
   /** Profile for schema & about */
-  profile: "/images/gozde/gozde-office-portrait.jpg",
+  profile: "/images/gozde/profile.jpg",
   /** Instagram Reel: Akşam Gelen Tatlı Krizi */
   reelTatliKrizi: "/images/gozde/reel-tatli-krizi.jpg",
   /** Instagram Reel: İnsülin Direnci */
