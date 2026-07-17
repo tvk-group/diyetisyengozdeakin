@@ -20,17 +20,15 @@ export async function Footer() {
     <footer className="bg-navy text-white pb-[calc(4.75rem+env(safe-area-inset-bottom))] md:pb-0">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <div className="mb-4 flex justify-center">
-              <Logo
-                href="/"
-                size="footer"
-                transparent
-                showName={false}
-                linkClassName="inline-flex translate-x-5 sm:translate-x-7"
-              />
-            </div>
-            <div className="text-center text-sm leading-relaxed text-white/60">
+          <div className="flex flex-col items-center text-center">
+            <Logo
+              href="/"
+              size="footer"
+              transparent
+              showName={false}
+              linkClassName="mb-4 inline-flex"
+            />
+            <div className="text-sm leading-relaxed text-white/60">
               <p>{t("descriptionLine1")}</p>
               <p className="font-medium text-white/80">{t("descriptionLine2")}</p>
               <p>{t("descriptionLine3")}</p>
