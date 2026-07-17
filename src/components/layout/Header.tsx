@@ -12,7 +12,6 @@ import { routing } from "@/i18n/routing";
 
 export function Header() {
   const t = useTranslations("nav");
-  const site = useTranslations("site");
   const locale = useLocale() as Locale;
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -29,8 +28,8 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-navy/5 bg-white/80 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Logo subtitle={site("expertDietitian")} />
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
+        <Logo size="nav" showName={false} linkClassName="mb-0" />
 
         <nav className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => (

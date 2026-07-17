@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, Video } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { BrandBanner } from "@/components/brand/BrandBanner";
 import { ProfileImage } from "@/components/ui/ProfileImage";
 import { SITE_CONFIG } from "@/lib/constants";
 import { GOZDE_IMAGES } from "@/lib/images";
@@ -15,16 +16,43 @@ export function Hero() {
   return (
     <section className="gradient-hero relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald/5 via-transparent to-transparent" />
-      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-32 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 pb-16 pt-8 sm:px-6 sm:pb-20 md:pb-24 lg:px-8 lg:pt-10">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-6 flex justify-center sm:justify-start"
+        >
+          <span className="inline-flex items-center gap-2 rounded-full border border-memorial-red/20 bg-memorial-red/5 px-4 py-1.5 text-sm font-medium text-memorial-red">
+            {t("badge")}
+          </span>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="relative mb-10 sm:mb-12"
+        >
+          <div
+            className="absolute inset-0 -mx-4 rounded-[2rem] sm:-mx-8"
+            aria-hidden
+          >
+            <div className="absolute inset-0 bg-gradient-to-b from-[#FAF8F4]/95 via-[#FAF8F4]/55 to-transparent" />
+            <div className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-white/90 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent via-white/70 to-white" />
+          </div>
+          <div className="relative z-10 px-1 py-4 sm:py-6">
+            <BrandBanner variant="embedded" priority />
+          </div>
+        </motion.div>
+
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.15 }}
           >
-            <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-memorial-red/20 bg-memorial-red/5 px-4 py-1.5 text-sm font-medium text-memorial-red">
-              {t("badge")}
-            </span>
             <h1 className="font-heading text-4xl font-bold leading-tight tracking-tight text-navy md:text-5xl lg:text-6xl">
               <span className="block">{t("title1")}</span>
               <span className="block text-gradient">{t("title2")}</span>
@@ -50,7 +78,7 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.25 }}
             className="relative"
           >
             <div className="glass-card relative aspect-[4/5] overflow-hidden rounded-3xl">

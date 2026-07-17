@@ -5,22 +5,42 @@ import { cn } from "@/lib/utils";
 type BrandBannerProps = {
   className?: string;
   priority?: boolean;
+  variant?: "card" | "embedded";
 };
 
-export function BrandBanner({ className, priority }: BrandBannerProps) {
+export function BrandBanner({ className, priority, variant = "card" }: BrandBannerProps) {
   const { width, height } = BRAND_DIMENSIONS.banner;
+  const embedded = variant === "embedded";
 
   return (
-    <div className={cn("mx-auto max-w-4xl", className)}>
-      <Image
-        src={BRAND_IMAGES.banner}
-        alt="Gözde Akın — Bilimsel beslenme, metabolik iyileşme, hormonal denge"
-        width={width}
-        height={height}
-        className="h-auto w-full rounded-3xl shadow-lg shadow-navy/5"
-        priority={priority}
-        sizes="(max-width: 1024px) 100vw, 896px"
-      />
+    <div
+      className={cn(
+        "mx-auto w-full",
+        embedded ? "max-w-3xl" : "max-w-4xl",
+        className
+      )}
+    >
+      <div
+        className={cn(
+          "relative overflow-hidden",
+          embedded && "brand-banner-embed"
+        )}
+      >
+        <Image
+          src={BRAND_IMAGES.banner}
+          alt="Gözde Akın — Bilimsel beslenme, metabolik iyileşme, hormonal denge"
+          width={width}
+          height={height}
+          className={cn(
+            "h-auto w-full",
+            embedded
+              ? "rounded-2xl opacity-[0.97]"
+              : "rounded-3xl shadow-lg shadow-navy/5"
+          )}
+          priority={priority}
+          sizes={embedded ? "(max-width: 1024px) 100vw, 768px" : "(max-width: 1024px) 100vw, 896px"}
+        />
+      </div>
     </div>
   );
 }

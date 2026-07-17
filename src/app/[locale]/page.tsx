@@ -1,5 +1,3 @@
-import { BrandBanner } from "@/components/brand/BrandBanner";
-import { Section } from "@/components/ui/Section";
 import { Hero } from "@/components/home/Hero";
 import { AboutPreview } from "@/components/home/AboutPreview";
 import { WhyChoose } from "@/components/home/WhyChoose";
@@ -51,9 +49,6 @@ export default async function HomePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Hero />
-      <Section variant="light" className="!py-12 md:!py-16">
-        <BrandBanner priority />
-      </Section>
       <AboutPreview />
       <WhyChoose />
       <Expertise />

@@ -54,3 +54,8 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.brand-banner-embed {
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 82%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 82%, transparent 100%);
+}
