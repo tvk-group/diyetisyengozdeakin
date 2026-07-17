@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BRAND_DIMENSIONS, BRAND_IMAGES } from "@/lib/brand";
+import { BRAND_DIMENSIONS, BRAND_IMAGES, BRAND_IMAGE_QUALITY } from "@/lib/brand";
 import { cn } from "@/lib/utils";
 
 type BrandBannerProps = {
@@ -16,7 +16,7 @@ export function BrandBanner({ className, priority, variant = "card" }: BrandBann
     <div
       className={cn(
         "mx-auto w-full",
-        embedded ? "max-w-3xl" : "max-w-4xl",
+        embedded ? "max-w-4xl lg:max-w-5xl" : "max-w-5xl",
         className
       )}
     >
@@ -31,14 +31,17 @@ export function BrandBanner({ className, priority, variant = "card" }: BrandBann
           alt="Gözde Akın — Bilimsel beslenme, metabolik iyileşme, hormonal denge"
           width={width}
           height={height}
+          quality={BRAND_IMAGE_QUALITY}
           className={cn(
-            "h-auto w-full",
-            embedded
-              ? "rounded-2xl opacity-[0.97]"
-              : "rounded-3xl shadow-lg shadow-navy/5"
+            "brand-image-crisp h-auto w-full",
+            embedded ? "rounded-2xl" : "rounded-3xl shadow-lg shadow-navy/5"
           )}
           priority={priority}
-          sizes={embedded ? "(max-width: 1024px) 100vw, 768px" : "(max-width: 1024px) 100vw, 896px"}
+          sizes={
+            embedded
+              ? "(max-width: 1024px) 100vw, (max-width: 1280px) 896px, 1024px"
+              : "(max-width: 1024px) 100vw, 1152px"
+          }
         />
       </div>
     </div>

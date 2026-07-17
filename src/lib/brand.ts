@@ -10,8 +10,11 @@ export const BRAND_IMAGES = {
   banner: "/brand/banner.png",
 } as const;
 
-/** Display dimensions for next/image (source files are 1536×1024) */
+/** Source dimensions after HD enhancement (2400px wide) */
 export const BRAND_DIMENSIONS = {
-  logo: { width: 1536, height: 1024 },
-  banner: { width: 1536, height: 1024 },
+  logo: { width: 2400, height: 1600 },
+  banner: { width: 2400, height: 1600 },
 } as const;
+
+/** Next/Image quality for brand assets (avoid soft recompression) */
+export const BRAND_IMAGE_QUALITY = 100;
