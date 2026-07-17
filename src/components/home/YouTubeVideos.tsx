@@ -10,10 +10,19 @@ export function YouTubeVideos() {
   return (
     <Section id="youtube" variant="light">
       <SectionHeader badge={t("sectionTitle")} title={t("title")} subtitle={t("subtitle")} />
-      <div className="grid gap-8 md:grid-cols-2">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {YOUTUBE_VIDEOS.map((video) => (
-          <div key={video.id} className="glass-card overflow-hidden rounded-3xl">
-            <div className="relative aspect-video w-full bg-navy/5">
+          <div
+            key={video.id}
+            className={`glass-card overflow-hidden rounded-3xl ${
+              video.format === "short" ? "mx-auto w-full max-w-sm sm:col-span-1" : ""
+            }`}
+          >
+            <div
+              className={`relative w-full bg-navy/5 ${
+                video.format === "short" ? "aspect-[9/16]" : "aspect-video"
+              }`}
+            >
               <iframe
                 src={`https://www.youtube-nocookie.com/embed/${video.videoId}`}
                 title={t(video.titleKey)}
