@@ -5,14 +5,13 @@ export const BRAND = {
 } as const;
 
 export const BRAND_IMAGES = {
-  logo: "/brand/logo.svg",
-  logoMark: "/brand/logo-mark.svg",
-  banner: "/brand/banner.svg",
-  /** Replace with /brand/logo.png when uploading raster logo */
-  logoPng: "/brand/logo.png",
-  bannerPng: "/brand/banner.png",
+  logo: "/brand/logo.png",
+  logoMark: "/brand/logo.png",
+  banner: "/brand/banner.png",
 } as const;
 
-export function brandAsset(preferred: string, fallback: string) {
-  return preferred;
-}
+/** Display dimensions for next/image (source files are 1536×1024) */
+export const BRAND_DIMENSIONS = {
+  logo: { width: 1536, height: 1024 },
+  banner: { width: 1536, height: 1024 },
+} as const;

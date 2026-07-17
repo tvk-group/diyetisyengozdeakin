@@ -93,7 +93,7 @@ export function InstallPrompt() {
 
       <div className="flex gap-3 pr-6">
         <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[#FAF8F4]">
-          <Image src={BRAND_IMAGES.logoMark} alt="" width={48} height={48} unoptimized />
+          <Image src={BRAND_IMAGES.logoMark} alt="" width={48} height={32} className="h-8 w-auto object-contain" />
         </div>
         <div>
           <p className="font-heading font-semibold text-navy">{t("installTitle")}</p>
