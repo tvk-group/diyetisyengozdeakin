@@ -25,8 +25,9 @@ export async function Footer() {
             <Logo
               href="/"
               dark
-              subtitle={site("expertDietitian")}
-              nameClassName="hidden sm:block"
+              size="default"
+              showName={false}
+              linkClassName="mb-4"
             />
             <p className="text-sm text-white/60">{t("description")}</p>
           </div>
