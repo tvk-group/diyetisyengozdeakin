@@ -4,7 +4,9 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, Video } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { ProfileImage } from "@/components/ui/ProfileImage";
 import { SITE_CONFIG } from "@/lib/constants";
+import { GOZDE_IMAGES } from "@/lib/images";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -51,15 +53,16 @@ export function Hero() {
             className="relative"
           >
             <div className="glass-card relative aspect-[4/5] overflow-hidden rounded-3xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-emerald/20 via-navy/10 to-memorial-red/10" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="mx-auto mb-4 flex h-32 w-32 items-center justify-center rounded-full bg-white/80 text-5xl font-bold text-navy shadow-xl">
-                    GA
-                  </div>
-                  <p className="font-heading text-xl font-bold text-navy">Gözde Akın</p>
-                  <p className="text-sm text-navy/60">Uzman Diyetisyen & Psikolog</p>
-                </div>
+              <ProfileImage
+                src={GOZDE_IMAGES.heroMemorial}
+                alt="Uzman Diyetisyen & Psikolog Gözde Akın — Memorial Sağlık Grubu"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/80 to-transparent p-6 pt-24">
+                <p className="font-heading text-xl font-bold text-white">Gözde Akın</p>
+                <p className="text-sm text-white/80">Uzman Diyetisyen & Psikolog</p>
               </div>
             </div>
             <div className="absolute -bottom-4 -left-4 rounded-2xl bg-white p-4 shadow-xl">

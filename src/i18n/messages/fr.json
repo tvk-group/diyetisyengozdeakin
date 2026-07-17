@@ -121,6 +121,16 @@
     "sectionTitle": "Témoignages de patients",
     "title": "Histoires réelles, résultats réels"
   },
+  "instagram": {
+    "sectionTitle": "Instagram",
+    "title": "Derniers contenus & Reels",
+    "subtitle": "Vidéos récentes sur la nutrition, la psychologie et la vie saine",
+    "reel1Title": "Envies de sucré le soir",
+    "reel1Subtitle": "La psychologie des envies de sucré",
+    "reel2Title": "La raison cachée de l'échec au régime",
+    "reel2Subtitle": "Résistance à l'insuline",
+    "followMore": "Suivez-nous pour en voir plus"
+  },
   "faq": {
     "sectionTitle": "Questions fréquentes",
     "title": "Vos questions, nos réponses",

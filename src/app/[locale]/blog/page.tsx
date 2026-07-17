@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { blogPosts, getLocalizedPost } from "@/content/blog/posts";
@@ -26,8 +27,18 @@ export default async function BlogPage({ params }: Props) {
         {blogPosts.map((post) => {
           const localized = getLocalizedPost(post, locale);
           return (
-            <article key={post.slug} className="group glass-card flex flex-col rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl">
-              <div className="h-48 bg-gradient-to-br from-emerald/20 to-navy/10" />
+            <article key={post.slug} className="group glass-card flex flex-col overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-xl">
+              <div className="relative h-48 bg-gradient-to-br from-emerald/20 to-navy/10">
+                {post.thumbnail && (
+                  <Image
+                    src={post.thumbnail}
+                    alt={localized.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                )}
+              </div>
               <div className="flex flex-1 flex-col p-6">
                 <div className="mb-2 flex items-center gap-2 text-xs text-navy/50">
                   <Clock className="h-3 w-3" />

@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Section, SectionHeader } from "@/components/ui/Section";
+import { ProfileImage } from "@/components/ui/ProfileImage";
+import { GOZDE_IMAGES } from "@/lib/images";
 import { ArrowRight, Award, Brain, Heart, Stethoscope } from "lucide-react";
 
 export async function AboutPreview() {
@@ -43,7 +45,16 @@ export async function AboutPreview() {
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="space-y-4">
+          <div className="glass-card relative aspect-[4/5] overflow-hidden rounded-3xl">
+            <ProfileImage
+              src={GOZDE_IMAGES.profile}
+              alt="Uzman Diyetisyen Gözde Akın — Memorial"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-4">
           {[
             { value: "2.", label: "Beslenme ve Diyetetik" },
             { value: "3.", label: "Sağlık Bilimleri Fakültesi" },
@@ -55,6 +66,7 @@ export async function AboutPreview() {
               <p className="mt-1 text-sm text-navy/60">{stat.label}</p>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </Section>

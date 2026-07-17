@@ -4,12 +4,89 @@ export interface BlogPost {
   publishedAt: string;
   readingTime: number;
   tags: string[];
+  thumbnail?: string;
   title: Record<string, string>;
   excerpt: Record<string, string>;
   content: Record<string, string>;
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "kilo-verememenin-gizli-nedeni-insulin-direnci",
+    category: "insulinResistance",
+    publishedAt: "2025-04-01",
+    readingTime: 8,
+    thumbnail: "/images/gozde/reel-insulin-direnci.jpg",
+    tags: ["insülin direnci", "kiloverme", "metabolizma", "gözdeakın"],
+    title: {
+      tr: "Kilo Verememenin Gizli Nedeni: İnsülin Direnci",
+      en: "The Hidden Reason You Can't Lose Weight: Insulin Resistance",
+      de: "Der verborgene Grund für Gewichtsprobleme: Insulinresistenz",
+      fr: "La raison cachée de l'échec au régime : la résistance à l'insuline",
+      ru: "Скрытая причина невозможности похудеть: инсулинорезистентность",
+      ar: "السبب الخفي لعدم فقدان الوزن: مقاومة الأنسولين",
+    },
+    excerpt: {
+      tr: "Tartıda değişim olmamasının arkasında yatan metabolik nedenlerden biri insülin direnci olabilir. Kanıta dayalı yaklaşımla metabolik iyileşme mümkündür.",
+      en: "One metabolic reason behind a stalled scale can be insulin resistance. Metabolic improvement is possible with an evidence-based approach.",
+      de: "Ein metabolischer Grund für stagnierende Gewichtsabnahme kann Insulinresistenz sein.",
+      fr: "Une raison métabolique derrière une balance qui stagne peut être la résistance à l'insuline.",
+      ru: "Одной из метаболических причин застоя веса может быть инсулинорезистентность.",
+      ar: "قد تكون مقاومة الأنسولين أحد الأسباب الأيضية وراء ثبات الوزن.",
+    },
+    content: {
+      tr: `Kilo verme sürecinde diyete uyum sağlanmasına rağmen tartının hareket etmemesi birçok danışanda motivasyonu düşürür. Oysa sorun her zaman "irade eksikliği" değildir.
+
+**İnsülin Direnci Nedir?**
+İnsülin direnci, vücudun hücrelerinin insüline yeterince duyarlı olmaması durumudur. Bu durumda kan şekeri dengelenmek için daha fazla insülin salgılanır ve metabolizma yağ depolama yönünde çalışmaya devam eder.
+
+**Belirtiler**
+- Özellikle karın bölgesinde kilo artışı
+- Tatlı ve karbonhidrat isteği
+- Yemek sonrası uyku hali
+- PCOS, diyabet veya metabolik sendrom öyküsü
+
+**Neden Kilo Vermeyi Zorlaştırır?**
+İnsülin yüksek kaldığında vücut yağ yakmak yerine yağ depolamaya yönelir. Bu nedenle sadece kalori kısıtlaması yeterli olmayabilir.
+
+**Tedavi Yaklaşımı**
+- Kan tahlili ile biyokimyasal değerlendirme
+- Kişiselleştirilmiş beslenme planı
+- Protein ve lif dengesi
+- Davranış değişikliği ve psikolojik destek
+- Düzenli takip
+
+**Sonuç**
+İnsülin direnci yönetildiğinde metabolik iyileşme, sürdürülebilir kilo yönetimi ve daha iyi enerji düzeyi mümkündür.`,
+      en: `During weight loss, when the scale doesn't move despite diet compliance, motivation drops for many clients. Yet the problem isn't always "lack of willpower."
+
+**What is Insulin Resistance?**
+Insulin resistance occurs when the body's cells don't respond adequately to insulin. Blood sugar is regulated by releasing more insulin, and metabolism continues storing fat.
+
+**Symptoms**
+- Weight gain especially around the abdomen
+- Cravings for sweets and carbohydrates
+- Post-meal fatigue
+- History of PCOS, diabetes, or metabolic syndrome
+
+**Why It Makes Weight Loss Hard**
+When insulin stays elevated, the body stores fat instead of burning it. Calorie restriction alone may not be enough.
+
+**Treatment Approach**
+- Biochemical evaluation with blood tests
+- Personalized nutrition plan
+- Protein and fiber balance
+- Behavior change and psychological support
+- Regular follow-up
+
+**Conclusion**
+When insulin resistance is managed, metabolic improvement, sustainable weight management, and better energy levels are possible.`,
+      de: `Bei Insulinresistenz speichert der Körper Fett statt es zu verbrennen. Mit evidenzbasiertem Ansatz ist metabolische Verbesserung möglich.`,
+      fr: `Avec la résistance à l'insuline, le corps stocke les graisses au lieu de les brûler. Une amélioration métabolique est possible avec une approche fondée sur des preuves.`,
+      ru: `При инсулинорезистентности организм накапливает жир вместо его сжигания. Метаболическое улучшение возможно при доказательном подходе.`,
+      ar: `مع مقاومة الأنسولين، يخزن الجسم الدهون بدلاً من حرقها. التحسين الأيضي ممكن بنهج قائم على الأدلة.`,
+    },
+  },
   {
     slug: "glutensiz-beslenme-gercekten-gerekli-mi",
     category: "nutrition",
@@ -371,6 +448,7 @@ Motivation is not permanent; it needs renewal. A diet is not a race, but a journ
     category: "psychology",
     publishedAt: "2025-02-10",
     readingTime: 5,
+    thumbnail: "/images/gozde/reel-tatli-krizi.jpg",
     tags: ["tatlıkrizi", "duygusalyeme", "mindfuleating", "beslenmepsikolojisi", "gözdeakın"],
     title: {
       tr: "Tatlı Krizlerinin Psikolojisi",
