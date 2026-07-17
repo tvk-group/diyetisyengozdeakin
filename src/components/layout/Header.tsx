@@ -11,6 +11,7 @@ import { routing } from "@/i18n/routing";
 
 export function Header() {
   const t = useTranslations("nav");
+  const site = useTranslations("site");
   const locale = useLocale() as Locale;
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -34,7 +35,7 @@ export function Header() {
           </div>
           <div className="hidden sm:block">
             <p className="font-heading text-sm font-bold text-navy">Gözde Akın</p>
-            <p className="text-xs text-navy/50">Uzman Diyetisyen & Psikolog</p>
+            <p className="text-xs text-navy/50">{site("expertDietitian")}</p>
           </div>
         </Link>
 

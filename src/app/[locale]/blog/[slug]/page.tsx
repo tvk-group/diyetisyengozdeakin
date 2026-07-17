@@ -82,7 +82,7 @@ export default async function BlogPostPage({ params }: Props) {
           </Link>
           <div className="mb-4 flex items-center gap-2 text-sm text-navy/50">
             <Clock className="h-4 w-4" />
-            {post.readingTime} dk · {post.publishedAt}
+            {post.readingTime} {t("minRead")} · {post.publishedAt}
           </div>
           <h1 className="font-heading text-3xl font-bold text-navy md:text-4xl">{localized.title}</h1>
           <p className="mt-2 text-sm text-emerald">{t("author")}: Gözde Akın · {t("medicalReview")}</p>

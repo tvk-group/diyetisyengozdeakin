@@ -2,7 +2,7 @@ import { Hero } from "@/components/home/Hero";
 import { AboutPreview } from "@/components/home/AboutPreview";
 import { WhyChoose } from "@/components/home/WhyChoose";
 import { Expertise } from "@/components/home/Expertise";
-import { BMICalculator } from "@/components/home/BMICalculator";
+import { HealthCalculators } from "@/components/home/HealthCalculators";
 import { PatientJourney } from "@/components/home/PatientJourney";
 import { SuccessStories } from "@/components/home/SuccessStories";
 import { InstagramReels } from "@/components/home/InstagramReels";
@@ -52,7 +52,7 @@ export default async function HomePage({ params }: Props) {
       <AboutPreview />
       <WhyChoose />
       <Expertise />
-      <BMICalculator />
+      <HealthCalculators />
       <PatientJourney />
       <SuccessStories />
       <InstagramReels />

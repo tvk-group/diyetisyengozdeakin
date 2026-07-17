@@ -20,7 +20,11 @@
     "subtitle": "A holistic nutrition and psychology approach focused on metabolic improvement, insulin resistance balance, and blood biochemistry optimization.",
     "ctaAppointment": "Book Appointment",
     "ctaOnline": "Online Consultation",
-    "ctaWhatsapp": "WhatsApp"
+    "ctaWhatsapp": "WhatsApp",
+    "yearsExperience": "8+",
+    "yearsExperienceLabel": "Years of Experience",
+    "memorialLabel": "Memorial",
+    "memorialSub": "Health Group"
   },
   "about": {
     "sectionTitle": "Who is Gözde Akın?",
@@ -39,7 +43,29 @@
     "mission": "Mission",
     "missionText": "To provide science-based, sustainable health solutions centered on helping people.",
     "vision": "Vision",
-    "visionText": "To build Turkey's most trusted functional medicine nutrition platform by combining nutrition and psychology."
+    "visionText": "To build Turkey's most trusted functional medicine nutrition platform by combining nutrition and psychology.",
+    "educationItems": [
+      "Okan University — Nutrition & Dietetics (2nd)",
+      "Okan University — Faculty of Health Sciences (3rd)",
+      "Okan University — Psychology Double Major",
+      "Okan University — MSc in Nutrition & Dietetics",
+      "Canada — International Training"
+    ],
+    "experienceItems": [
+      "2017–2023 — Memorial Ataşehir Hospital (Lead Dietitian)",
+      "Current — Memorial Göztepe Hospital",
+      "Atlas University — Nutrition & Psychology Lectures",
+      "Bahçeşehir University — Health Psychology Lectures",
+      "We5 Concept Etiler — Sports Nutrition"
+    ],
+    "stat1Value": "2nd",
+    "stat1Label": "Nutrition & Dietetics",
+    "stat2Value": "3rd",
+    "stat2Label": "Faculty of Health Sciences",
+    "stat3Value": "8+",
+    "stat3Label": "Years Clinical Experience",
+    "stat4Value": "2",
+    "stat4Label": "Undergraduate Degrees"
   },
   "whyChoose": {
     "sectionTitle": "Why Gözde Akın?",
@@ -99,7 +125,26 @@
     "underweight": "Underweight",
     "normal": "Normal",
     "overweight": "Overweight",
-    "obese": "Obese"
+    "obese": "Obese",
+    "bodyFat": "Body Fat %",
+    "bodyFatDesc": "Estimated body fat via Navy formula",
+    "pregnancy": "Pregnancy Weight",
+    "pregnancyDesc": "Recommended weight range by week",
+    "activity": "Activity",
+    "sedentary": "Sedentary",
+    "light": "Light",
+    "moderate": "Moderate",
+    "active": "Active",
+    "veryActive": "Very active",
+    "kcalUnit": "kcal",
+    "waist": "Waist (cm)",
+    "neck": "Neck (cm)",
+    "weeksPregnant": "Weeks pregnant",
+    "prePregnancyWeight": "Pre-pregnancy weight (kg)",
+    "bodyFatResult": "Estimated body fat",
+    "pregnancyResult": "Recommended weight range",
+    "waterPerDay": "Recommended daily water intake",
+    "bodyFatFemaleNote": "Clinical assessment recommended for women"
   },
   "journey": {
     "sectionTitle": "Patient Journey",
@@ -183,7 +228,11 @@
     "message": "Your Message",
     "send": "Send",
     "workingHours": "Working Hours",
-    "workingHoursValue": "Monday – Friday: 09:00 – 18:00"
+    "workingHoursValue": "Monday – Friday: 09:00 – 18:00",
+    "whatsapp": "Message on WhatsApp",
+    "whatsappDesc": "Reach us on WhatsApp for quick appointments and questions.",
+    "mapTitle": "Location",
+    "formSuccess": "Your message was received. We will respond shortly."
   },
   "blog": {
     "title": "Blog",
@@ -192,7 +241,8 @@
     "categories": "Categories",
     "allPosts": "All Posts",
     "author": "Author",
-    "medicalReview": "Medical Review"
+    "medicalReview": "Medical Review",
+    "minRead": "min read"
   },
   "services": {
     "title": "Services",
@@ -201,7 +251,9 @@
     "treatment": "Treatment Process",
     "timeline": "Timeline",
     "results": "Expected Results",
-    "bookNow": "Book Now"
+    "bookNow": "Book Now",
+    "science": "Scientific Approach",
+    "faq": "Frequently Asked Questions"
   },
   "onlineConsultation": {
     "title": "Online Consultation",
@@ -211,5 +263,10 @@
     "worldwide": "Worldwide",
     "personalized": "Personalized Plan",
     "followUp": "Regular Follow-up"
+  },
+  "site": {
+    "expertDietitian": "Expert Dietitian & Psychologist",
+    "memorialGroup": "Health Group",
+    "imageAlt": "Expert Dietitian & Psychologist Gözde Akın — Memorial Health Group"
   }
 }

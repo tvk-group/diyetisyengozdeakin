@@ -6,6 +6,7 @@ import { SITE_CONFIG, HOSPITALS } from "@/lib/constants";
 export async function Footer() {
   const t = await getTranslations("footer");
   const nav = await getTranslations("nav");
+  const site = await getTranslations("site");
 
   const links = [
     { href: "/", label: nav("home") },
@@ -26,7 +27,7 @@ export async function Footer() {
               </div>
               <div>
                 <p className="font-heading font-bold">Gözde Akın</p>
-                <p className="text-xs text-white/60">Uzman Diyetisyen & Psikolog</p>
+                <p className="text-xs text-white/60">{site("expertDietitian")}</p>
               </div>
             </div>
             <p className="text-sm text-white/60">{t("description")}</p>

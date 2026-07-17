@@ -42,7 +42,7 @@ export default async function BlogPage({ params }: Props) {
               <div className="flex flex-1 flex-col p-6">
                 <div className="mb-2 flex items-center gap-2 text-xs text-navy/50">
                   <Clock className="h-3 w-3" />
-                  {post.readingTime} dk
+                  {post.readingTime} {t("minRead")}
                   <span>·</span>
                   {post.publishedAt}
                 </div>

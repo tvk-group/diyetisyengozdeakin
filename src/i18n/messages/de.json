@@ -20,7 +20,11 @@
     "subtitle": "Ein ganzheitlicher Ernährungs- und Psychologieansatz mit Fokus auf metabolische Verbesserung, Insulinresistenz-Ausgleich und Optimierung der Blutbiochemie.",
     "ctaAppointment": "Termin buchen",
     "ctaOnline": "Online-Beratung",
-    "ctaWhatsapp": "WhatsApp"
+    "ctaWhatsapp": "WhatsApp",
+    "yearsExperience": "8+",
+    "yearsExperienceLabel": "Jahre Erfahrung",
+    "memorialLabel": "Memorial",
+    "memorialSub": "Gesundheitsgruppe"
   },
   "about": {
     "sectionTitle": "Wer ist Gözde Akın?",
@@ -39,7 +43,29 @@
     "mission": "Mission",
     "missionText": "Wissenschaftlich fundierte, nachhaltige Gesundheitslösungen anzubieten, die dem Menschen dienen.",
     "vision": "Vision",
-    "visionText": "Die vertrauenswürdigste Plattform für funktionelle Medizin-Ernährung in der Türkei aufzubauen."
+    "visionText": "Die vertrauenswürdigste Plattform für funktionelle Medizin-Ernährung in der Türkei aufzubauen.",
+    "educationItems": [
+      "Okan Universität — Ernährung & Diätetik (2.)",
+      "Okan Universität — Gesundheitswissenschaften (3.)",
+      "Okan Universität — Psychologie Doppelstudium",
+      "Okan Universität — Master Ernährung & Diätetik",
+      "Kanada — Internationale Ausbildung"
+    ],
+    "experienceItems": [
+      "2017–2023 — Memorial Ataşehir (Leitende Ernährungsberaterin)",
+      "Aktuell — Memorial Göztepe",
+      "Atlas Universität — Ernährung & Psychologie",
+      "Bahçeşehir Universität — Gesundheitspsychologie",
+      "We5 Concept Etiler — Sporternährung"
+    ],
+    "stat1Value": "2.",
+    "stat1Label": "Ernährung & Diätetik",
+    "stat2Value": "3.",
+    "stat2Label": "Gesundheitswissenschaften",
+    "stat3Value": "8+",
+    "stat3Label": "Jahre klinische Erfahrung",
+    "stat4Value": "2",
+    "stat4Label": "Studienabschlüsse"
   },
   "whyChoose": {
     "sectionTitle": "Warum Gözde Akın?",
@@ -99,7 +125,26 @@
     "underweight": "Untergewicht",
     "normal": "Normal",
     "overweight": "Übergewicht",
-    "obese": "Adipös"
+    "obese": "Adipös",
+    "bodyFat": "Körperfett %",
+    "bodyFatDesc": "Geschätzter Körperfettanteil (Navy-Formel)",
+    "pregnancy": "Schwangerschaftsgewicht",
+    "pregnancyDesc": "Empfohlener Gewichtsbereich nach Woche",
+    "activity": "Aktivität",
+    "sedentary": "Sitzend",
+    "light": "Leicht",
+    "moderate": "Mäßig",
+    "active": "Aktiv",
+    "veryActive": "Sehr aktiv",
+    "kcalUnit": "kcal",
+    "waist": "Taille (cm)",
+    "neck": "Hals (cm)",
+    "weeksPregnant": "Schwangerschaftswoche",
+    "prePregnancyWeight": "Gewicht vor Schwangerschaft (kg)",
+    "bodyFatResult": "Geschätzter Körperfettanteil",
+    "pregnancyResult": "Empfohlener Gewichtsbereich",
+    "waterPerDay": "Empfohlene tägliche Wasseraufnahme",
+    "bodyFatFemaleNote": "Klinische Bewertung für Frauen empfohlen"
   },
   "journey": {
     "sectionTitle": "Patientenreise",
@@ -183,7 +228,11 @@
     "message": "Ihre Nachricht",
     "send": "Senden",
     "workingHours": "Öffnungszeiten",
-    "workingHoursValue": "Montag – Freitag: 09:00 – 18:00"
+    "workingHoursValue": "Montag – Freitag: 09:00 – 18:00",
+    "whatsapp": "WhatsApp-Nachricht",
+    "whatsappDesc": "Kontaktieren Sie uns per WhatsApp für schnelle Termine.",
+    "mapTitle": "Standort",
+    "formSuccess": "Ihre Nachricht wurde empfangen."
   },
   "blog": {
     "title": "Blog",
@@ -192,7 +241,8 @@
     "categories": "Kategorien",
     "allPosts": "Alle Beiträge",
     "author": "Autorin",
-    "medicalReview": "Medizinische Prüfung"
+    "medicalReview": "Medizinische Prüfung",
+    "minRead": "Min. Lesezeit"
   },
   "services": {
     "title": "Leistungen",
@@ -201,7 +251,9 @@
     "treatment": "Behandlungsprozess",
     "timeline": "Zeitplan",
     "results": "Erwartete Ergebnisse",
-    "bookNow": "Jetzt buchen"
+    "bookNow": "Jetzt buchen",
+    "science": "Wissenschaftlicher Ansatz",
+    "faq": "Häufige Fragen"
   },
   "onlineConsultation": {
     "title": "Online-Beratung",
@@ -211,5 +263,10 @@
     "worldwide": "Weltweit",
     "personalized": "Personalisierter Plan",
     "followUp": "Regelmäßige Nachverfolgung"
+  },
+  "site": {
+    "expertDietitian": "Ernährungsberaterin & Psychologin",
+    "memorialGroup": "Gesundheitsgruppe",
+    "imageAlt": "Ernährungsberaterin & Psychologin Gözde Akın — Memorial"
   }
 }

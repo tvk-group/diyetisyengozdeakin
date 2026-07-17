@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 interface ProfileImageProps {
@@ -26,6 +27,7 @@ export function ProfileImage({
   sizes,
 }: ProfileImageProps) {
   const [error, setError] = useState(false);
+  const site = useTranslations("site");
 
   if (error) {
     return (
@@ -41,7 +43,7 @@ export function ProfileImage({
             GA
           </div>
           <p className="font-heading text-lg font-bold text-navy">Gözde Akın</p>
-          <p className="text-sm text-navy/60">Uzman Diyetisyen & Psikolog</p>
+          <p className="text-sm text-navy/60">{site("expertDietitian")}</p>
         </div>
       </div>
     );

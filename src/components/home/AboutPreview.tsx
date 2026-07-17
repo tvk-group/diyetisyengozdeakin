@@ -7,6 +7,7 @@ import { ArrowRight, Award, Brain, Heart, Stethoscope } from "lucide-react";
 
 export async function AboutPreview() {
   const t = await getTranslations("about");
+  const site = await getTranslations("site");
 
   const roles = [
     { icon: Stethoscope, label: t("role1") },
@@ -49,17 +50,17 @@ export async function AboutPreview() {
           <div className="glass-card relative aspect-[4/5] overflow-hidden rounded-3xl">
             <ProfileImage
               src={GOZDE_IMAGES.profile}
-              alt="Uzman Diyetisyen Gözde Akın — Memorial"
+              alt={site("imageAlt")}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
           <div className="grid grid-cols-2 gap-4">
           {[
-            { value: "2.", label: "Beslenme ve Diyetetik" },
-            { value: "3.", label: "Sağlık Bilimleri Fakültesi" },
-            { value: "8+", label: "Yıllık Klinik Deneyim" },
-            { value: "2", label: "Lisans Diploması" },
+            { value: t("stat1Value"), label: t("stat1Label") },
+            { value: t("stat2Value"), label: t("stat2Label") },
+            { value: t("stat3Value"), label: t("stat3Label") },
+            { value: t("stat4Value"), label: t("stat4Label") },
           ].map((stat) => (
             <div key={stat.label} className="glass-card rounded-2xl p-6 text-center">
               <p className="font-heading text-3xl font-bold text-navy">{stat.value}</p>

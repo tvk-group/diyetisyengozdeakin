@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # diyetisyengozdeakin.com
 
 Premium website for **Uzman Diyetisyen & Psikolog Gözde Akın** — Memorial Sağlık Grubu, İstanbul.
@@ -19,6 +18,10 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
+## Vercel Deploy
+
+Production branch must be **`main`**. Framework preset: **Next.js**.
+
 ## Production Directive
 
 See [`docs/CURSOR-MASTER-DIRECTIVE.md`](docs/CURSOR-MASTER-DIRECTIVE.md) for the full production specification.
@@ -29,6 +32,3 @@ See [`docs/CURSOR-MASTER-DIRECTIVE.md`](docs/CURSOR-MASTER-DIRECTIVE.md) for the
 - **Phone:** +90 (0) 538 935 92 14
 - **Domain:** diyetisyengozdeakin.com
 - **Instagram:** [@diyetisyengozdeakin](https://www.instagram.com/diyetisyengozdeakin/)
-=======
-# diyetisyengozdeakin
->>>>>>> eb1749d942828896c14dfa66eded03b23a6abaee

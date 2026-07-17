@@ -20,7 +20,11 @@
     "subtitle": "Une approche holistique de la nutrition et de la psychologie axée sur l'amélioration métabolique, l'équilibre de la résistance à l'insuline et l'optimisation de la biochimie sanguine.",
     "ctaAppointment": "Prendre rendez-vous",
     "ctaOnline": "Consultation en ligne",
-    "ctaWhatsapp": "WhatsApp"
+    "ctaWhatsapp": "WhatsApp",
+    "yearsExperience": "8+",
+    "yearsExperienceLabel": "Années d'expérience",
+    "memorialLabel": "Memorial",
+    "memorialSub": "Groupe de santé"
   },
   "about": {
     "sectionTitle": "Qui est Gözde Akın ?",
@@ -39,7 +43,29 @@
     "mission": "Mission",
     "missionText": "Fournir des solutions de santé durables et fondées sur la science, centrées sur l'aide aux personnes.",
     "vision": "Vision",
-    "visionText": "Construire la plateforme de nutrition en médecine fonctionnelle la plus fiable de Turquie."
+    "visionText": "Construire la plateforme de nutrition en médecine fonctionnelle la plus fiable de Turquie.",
+    "educationItems": [
+      "Université Okan — Nutrition & Diététique (2e)",
+      "Université Okan — Sciences de la santé (3e)",
+      "Université Okan — Double majeure Psychologie",
+      "Université Okan — Master Nutrition & Diététique",
+      "Canada — Formation internationale"
+    ],
+    "experienceItems": [
+      "2017–2023 — Memorial Ataşehir (Diététicienne responsable)",
+      "Actuel — Memorial Göztepe",
+      "Université Atlas — Nutrition & Psychologie",
+      "Université Bahçeşehir — Psychologie de la santé",
+      "We5 Concept Etiler — Nutrition sportive"
+    ],
+    "stat1Value": "2e",
+    "stat1Label": "Nutrition & Diététique",
+    "stat2Value": "3e",
+    "stat2Label": "Sciences de la santé",
+    "stat3Value": "8+",
+    "stat3Label": "Années d'expérience clinique",
+    "stat4Value": "2",
+    "stat4Label": "Diplômes universitaires"
   },
   "whyChoose": {
     "sectionTitle": "Pourquoi Gözde Akın ?",
@@ -99,7 +125,26 @@
     "underweight": "Insuffisance pondérale",
     "normal": "Normal",
     "overweight": "Surpoids",
-    "obese": "Obèse"
+    "obese": "Obèse",
+    "bodyFat": "Masse grasse %",
+    "bodyFatDesc": "Masse grasse estimée (formule Navy)",
+    "pregnancy": "Poids grossesse",
+    "pregnancyDesc": "Fourchette de poids recommandée",
+    "activity": "Activité",
+    "sedentary": "Sédentaire",
+    "light": "Légère",
+    "moderate": "Modérée",
+    "active": "Active",
+    "veryActive": "Très active",
+    "kcalUnit": "kcal",
+    "waist": "Tour de taille (cm)",
+    "neck": "Cou (cm)",
+    "weeksPregnant": "Semaines de grossesse",
+    "prePregnancyWeight": "Poids avant grossesse (kg)",
+    "bodyFatResult": "Masse grasse estimée",
+    "pregnancyResult": "Fourchette de poids recommandée",
+    "waterPerDay": "Apport hydrique quotidien recommandé",
+    "bodyFatFemaleNote": "Évaluation clinique recommandée pour les femmes"
   },
   "journey": {
     "sectionTitle": "Parcours patient",
@@ -183,7 +228,11 @@
     "message": "Votre message",
     "send": "Envoyer",
     "workingHours": "Heures d'ouverture",
-    "workingHoursValue": "Lundi – Vendredi : 09h00 – 18h00"
+    "workingHoursValue": "Lundi – Vendredi : 09h00 – 18h00",
+    "whatsapp": "Écrire sur WhatsApp",
+    "whatsappDesc": "Contactez-nous sur WhatsApp pour un rendez-vous rapide.",
+    "mapTitle": "Emplacement",
+    "formSuccess": "Votre message a été reçu."
   },
   "blog": {
     "title": "Blog",
@@ -192,7 +241,8 @@
     "categories": "Catégories",
     "allPosts": "Tous les articles",
     "author": "Auteure",
-    "medicalReview": "Revue médicale"
+    "medicalReview": "Revue médicale",
+    "minRead": "min de lecture"
   },
   "services": {
     "title": "Services",
@@ -201,7 +251,9 @@
     "treatment": "Processus de traitement",
     "timeline": "Calendrier",
     "results": "Résultats attendus",
-    "bookNow": "Réserver maintenant"
+    "bookNow": "Réserver maintenant",
+    "science": "Approche scientifique",
+    "faq": "Questions fréquentes"
   },
   "onlineConsultation": {
     "title": "Consultation en ligne",
@@ -211,5 +263,10 @@
     "worldwide": "Mondial",
     "personalized": "Plan personnalisé",
     "followUp": "Suivi régulier"
+  },
+  "site": {
+    "expertDietitian": "Diététicienne & Psychologue",
+    "memorialGroup": "Groupe de santé",
+    "imageAlt": "Diététicienne & Psychologue Gözde Akın — Memorial"
   }
 }
