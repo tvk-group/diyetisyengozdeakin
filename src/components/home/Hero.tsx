@@ -21,7 +21,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="relative mb-8 sm:mb-10"
+          className="relative"
         >
           <div
             className="absolute inset-0 -mx-4 rounded-[2rem] sm:-mx-8"
@@ -29,21 +29,22 @@ export function Hero() {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-[#FAF8F4]/95 via-[#FAF8F4]/55 to-transparent" />
             <div className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-white/90 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent via-white/60 to-white" />
+            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent via-white/70 to-white" />
           </div>
-          <div className="relative z-10 px-1 pt-4 sm:pt-6">
+          <div className="relative z-10 px-1 py-4 sm:py-6">
             <BrandBanner variant="embedded" priority />
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            className="relative z-10 -mt-2 flex justify-center px-1 pb-2 sm:-mt-3 sm:pb-4"
-          >
-            <span className="inline-flex items-center gap-2 rounded-full border border-memorial-red/20 bg-white/90 px-4 py-1.5 text-sm font-medium text-memorial-red shadow-sm backdrop-blur-sm">
-              {t("badge")}
-            </span>
-          </motion.div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="mb-8 flex justify-center sm:mb-10"
+        >
+          <span className="inline-flex items-center gap-2 rounded-full border border-memorial-red/20 bg-memorial-red/5 px-4 py-1.5 text-sm font-medium text-memorial-red">
+            {t("badge")}
+          </span>
         </motion.div>
 
         <div className="grid items-center gap-12 lg:grid-cols-2">
