@@ -1,18 +1,14 @@
 # Marka Dosyaları — Logo & Banner
 
-## Aktif dosyalar (orijinal)
+## Aktif dosyalar (HD)
 
 | Dosya | Boyut | Kullanım |
 |-------|-------|----------|
-| `logo.png` | 1536×1024 | Header, footer, PWA ikon kaynağı |
-| `banner.png` | 1536×1024 | Ana sayfa marka bandı |
+| `logo.png` | 2400×1600 | Header, footer, PWA ikon kaynağı |
+| `banner.png` | 2400×1600 | Ana sayfa marka bandı |
+| `logo-transparent.png` | 2400×1600, şeffaf arka plan | Footer |
+| `banner-original.png` | 1536×1024 yedek | Orijinal yükleme |
 
-## Opsiyonel
+Daha yüksek kalite için 3000px+ genişlikte PNG yükleyip `logo.png` / `banner.png` üzerine yazın.
 
-| Dosya | Açıklama |
-|-------|----------|
-| `logo-web.png` | Otomatik küçültülmüş logo yedeği |
-| `banner-web.png` | Otomatik küçültülmüş banner yedeği |
-| `*.svg` | Eski vektör yedekleri (kullanılmıyor) |
-
-Güncelleme: `logo.png` veya `banner.png` dosyalarını değiştirin → commit → deploy.
+Güncelleme: dosyaları değiştirin → commit → deploy.
