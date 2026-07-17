@@ -23,10 +23,10 @@ export async function Footer() {
           <div>
             <Logo
               href="/"
-              dark
-              size="default"
+              size="footer"
+              transparent
               showName={false}
-              linkClassName="mb-4"
+              linkClassName="mb-6"
             />
             <p className="text-sm text-white/60">{t("description")}</p>
           </div>

@@ -7,6 +7,7 @@ export const BRAND = {
 export const BRAND_IMAGES = {
   logo: "/brand/logo.png",
   logoMark: "/brand/logo.png",
+  logoTransparent: "/brand/logo-transparent.png",
   banner: "/brand/banner.png",
 } as const;
 

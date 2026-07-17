@@ -39,8 +39,8 @@ export function BrandBanner({ className, priority, variant = "card" }: BrandBann
           priority={priority}
           sizes={
             embedded
-              ? "(max-width: 1024px) 100vw, (max-width: 1280px) 896px, 1024px"
-              : "(max-width: 1024px) 100vw, 1152px"
+              ? "(max-width: 1024px) 100vw, 768px"
+              : "(max-width: 1024px) 100vw, 896px"
           }
         />
       </div>
