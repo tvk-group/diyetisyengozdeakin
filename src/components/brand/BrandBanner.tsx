@@ -16,7 +16,7 @@ export function BrandBanner({ className, priority, variant = "card" }: BrandBann
     <div
       className={cn(
         "mx-auto w-full",
-        embedded ? "max-w-4xl lg:max-w-5xl" : "max-w-5xl",
+        embedded ? "max-w-3xl" : "max-w-4xl",
         className
       )}
     >
