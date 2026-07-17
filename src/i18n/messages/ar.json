@@ -219,7 +219,9 @@
     "button": "احجز موعداً"
   },
   "footer": {
-    "description": "أخصائية التغذية والطب النفسي غözde أكين — مجموعة ميموريال الصحية",
+    "descriptionLine1": "أخصائية تغذية خبيرة وأخصائية نفسية",
+    "descriptionLine2": "Gözde Akın",
+    "descriptionLine3": "مجموعة ميموريال الصحية",
     "quickLinks": "روابط سريعة",
     "contact": "اتصل بنا",
     "hospitals": "المستشفيات",

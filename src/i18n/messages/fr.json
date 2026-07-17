@@ -219,7 +219,9 @@
     "button": "Prendre rendez-vous"
   },
   "footer": {
-    "description": "Diététicienne Experte & Psychologue Gözde Akın — Groupe de Santé Memorial",
+    "descriptionLine1": "Diététicienne Experte & Psychologue",
+    "descriptionLine2": "Gözde Akın",
+    "descriptionLine3": "Groupe de Santé Memorial",
     "quickLinks": "Liens rapides",
     "contact": "Contact",
     "hospitals": "Hôpitaux",

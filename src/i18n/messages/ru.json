@@ -219,7 +219,9 @@
     "button": "Записаться"
   },
   "footer": {
-    "description": "Диетолог-эксперт и психолог Гёзде Акын — Группа здоровья Memorial",
+    "descriptionLine1": "Диетолог-эксперт и психолог",
+    "descriptionLine2": "Gözde Akın",
+    "descriptionLine3": "Группа здоровья Memorial",
     "quickLinks": "Быстрые ссылки",
     "contact": "Контакты",
     "hospitals": "Больницы",
