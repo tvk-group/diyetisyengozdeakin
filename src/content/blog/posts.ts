@@ -12,6 +12,74 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "kilo-vermeyi-hizlandiran-5-basit-kural",
+    category: "nutrition",
+    publishedAt: "2025-04-10",
+    readingTime: 6,
+    thumbnail: "/images/gozde/reel-5-basit-kural.jpg",
+    tags: ["kiloverme", "sağlıklıbeslenme", "diyetisyenönerisi", "gözdeakın"],
+    title: {
+      tr: "Kilo Vermeyi Hızlandıran 5 Basit Kural",
+      en: "5 Simple Rules to Accelerate Weight Loss",
+      de: "5 einfache Regeln zur Beschleunigung des Gewichtsverlusts",
+      fr: "5 règles simples pour accélérer la perte de poids",
+      ru: "5 простых правил для ускорения похудения",
+      ar: "5 قواعد بسيطة لتسريع فقدان الوزن",
+    },
+    excerpt: {
+      tr: "Kilo verme sürecini hızlandırmak için günlük hayata kolayca uygulanabilen 5 bilim temelli kural.",
+      en: "5 science-based rules easily applied in daily life to accelerate the weight loss process.",
+      de: "5 wissenschaftlich fundierte Regeln, die leicht im Alltag anwendbar sind.",
+      fr: "5 règles fondées sur la science, faciles à appliquer au quotidien.",
+      ru: "5 научно обоснованных правил, легко применимых в повседневной жизни.",
+      ar: "5 قواعد علمية يسهل تطبيقها يومياً لتسريع فقدان الوزن.",
+    },
+    content: {
+      tr: `Kilo verme bir maraton değil, sürdürülebilir alışkanlıkların toplamıdır. İşte metabolizmayı destekleyen 5 basit kural:
+
+**1. Her Öğünde Protein**
+Protein, tokluk hissini uzatır ve kas kütlesini korur. Yumurta, yoğurt, balık, baklagil veya kaliteli et her öğüne eklenebilir.
+
+**2. Yeterli Su Tüketimi**
+Dehidrasyon metabolizmayı yavaşlatır. Günde en az 2–2,5 litre su hedefleyin. Su ihtiyacı kilo, aktivite ve mevsime göre değişir.
+
+**3. Her Öğünde Sebze / Salata**
+Lif, kan şekerini dengeler ve sindirimi destekler. Tabakların yarısını sebze ile doldurmak basit ama güçlü bir stratejidir.
+
+**4. Günlük Hareket**
+Sadece spor salonu değil; yürüyüş, merdiven, günlük adım sayısı da önemlidir. Haftada en az 150 dakika orta yoğunlukta aktivite hedeflenmelidir.
+
+**5. Kaliteli Uyku**
+Uyku eksikliği açlık hormonlarını artırır ve tatlı isteğini tetikler. 7–8 saat kaliteli uyku, kilo yönetiminin görünmez kahramanıdır.
+
+**Sonuç**
+Bu 5 kural birlikte uygulandığında metabolizma desteklenir, enerji artar ve kilo verme süreci daha sürdürülebilir hale gelir.`,
+      en: `Weight loss is not a sprint but the sum of sustainable habits. Here are 5 simple rules that support metabolism:
+
+**1. Protein at Every Meal**
+Protein extends satiety and preserves muscle mass. Eggs, yogurt, fish, legumes, or quality meat can be added to each meal.
+
+**2. Adequate Water Intake**
+Dehydration slows metabolism. Aim for at least 2–2.5 liters of water daily.
+
+**3. Vegetables / Salad at Every Meal**
+Fiber balances blood sugar and supports digestion. Filling half your plate with vegetables is a simple but powerful strategy.
+
+**4. Daily Movement**
+Not just the gym — walking, stairs, and daily steps matter. Aim for at least 150 minutes of moderate activity per week.
+
+**5. Quality Sleep**
+Sleep deprivation increases hunger hormones and triggers sweet cravings. 7–8 hours of quality sleep is the invisible hero of weight management.
+
+**Conclusion**
+When applied together, these 5 rules support metabolism, increase energy, and make weight loss more sustainable.`,
+      de: `5 einfache Regeln: Protein, Wasser, Gemüse, Bewegung und Schlaf — zusammen unterstützen sie den Stoffwechsel nachhaltig.`,
+      fr: `5 règles simples : protéines, eau, légumes, mouvement et sommeil — ensemble, elles soutiennent durablement le métabolisme.`,
+      ru: `5 простых правил: белок, вода, овощи, движение и сон — вместе они устойчиво поддерживают метаболизм.`,
+      ar: `5 قواعد بسيطة: البروتين، الماء، الخضار، الحركة والنوم — معاً تدعم الأيض بشكل مستدام.`,
+    },
+  },
+  {
     slug: "kilo-verememenin-gizli-nedeni-insulin-direnci",
     category: "insulinResistance",
     publishedAt: "2025-04-01",

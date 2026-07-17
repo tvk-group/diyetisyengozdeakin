@@ -1,7 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
+import { ProfileImage } from "@/components/ui/ProfileImage";
 import { SITE_CONFIG } from "@/lib/constants";
+import { GOZDE_IMAGES } from "@/lib/images";
 import { Globe, Video, Heart, LineChart } from "lucide-react";
 
 type Props = {
@@ -29,7 +31,17 @@ export default async function OnlineConsultationPage({ params }: Props) {
   return (
     <>
       <Section variant="gradient" className="!py-16">
-        <SectionHeader title={t("title")} subtitle={t("subtitle")} />
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          <SectionHeader title={t("title")} subtitle={t("subtitle")} centered={false} />
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl shadow-xl">
+            <ProfileImage
+              src={GOZDE_IMAGES.profileOffice}
+              alt="Gözde Akın — Online Danışmanlık"
+              fill
+              sizes="(max-width: 1024px) 100vw, 400px"
+            />
+          </div>
+        </div>
       </Section>
       <Section>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

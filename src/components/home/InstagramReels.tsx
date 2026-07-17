@@ -18,7 +18,7 @@ export function InstagramReels() {
         title={t("title")}
         subtitle={t("subtitle")}
       />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {INSTAGRAM_REELS.map((reel) => (
           <Link
             key={reel.id}

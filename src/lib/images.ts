@@ -3,30 +3,40 @@
  * Place image files in /public/images/gozde/
  */
 export const GOZDE_IMAGES = {
-  /** Memorial hospital — hero & profile (lab coat) */
+  /** Memorial hospital — hero (lab coat) */
   heroMemorial: "/images/gozde/gozde-memorial-hero.jpg",
-  /** Profile portrait for about page & schema */
-  profile: "/images/gozde/gozde-memorial-hero.jpg",
+  /** Office / consultation portrait — warm, approachable */
+  profileOffice: "/images/gozde/gozde-office-portrait.jpg",
+  /** Profile for schema & about */
+  profile: "/images/gozde/gozde-office-portrait.jpg",
   /** Instagram Reel: Akşam Gelen Tatlı Krizi */
   reelTatliKrizi: "/images/gozde/reel-tatli-krizi.jpg",
   /** Instagram Reel: İnsülin Direnci */
   reelInsulinDirenci: "/images/gozde/reel-insulin-direnci.jpg",
+  /** Instagram Reel: 5 Basit Kural */
+  reel5Kural: "/images/gozde/reel-5-basit-kural.jpg",
 } as const;
 
 export const INSTAGRAM_REELS = [
+  {
+    id: "5-basit-kural",
+    image: GOZDE_IMAGES.reel5Kural,
+    blogSlug: "kilo-vermeyi-hizlandiran-5-basit-kural",
+    titleKey: "reel3Title",
+    subtitleKey: "reel3Subtitle",
+  },
+  {
+    id: "insulin-direnci",
+    image: GOZDE_IMAGES.reelInsulinDirenci,
+    blogSlug: "kilo-verememenin-gizli-nedeni-insulin-direnci",
+    titleKey: "reel2Title",
+    subtitleKey: "reel2Subtitle",
+  },
   {
     id: "tatli-krizi",
     image: GOZDE_IMAGES.reelTatliKrizi,
     blogSlug: "tatli-krizlerinin-psikolojisi",
     titleKey: "reel1Title",
     subtitleKey: "reel1Subtitle",
-  },
-  {
-    id: "insulin-direnci",
-    image: GOZDE_IMAGES.reelInsulinDirenci,
-    blogSlug: "kilo-verememenin-gizli-nedeni-insulin-direnci",
-    serviceSlug: "insulin-direnci",
-    titleKey: "reel2Title",
-    subtitleKey: "reel2Subtitle",
   },
 ] as const;

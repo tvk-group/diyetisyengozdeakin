@@ -1,5 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Section, SectionHeader } from "@/components/ui/Section";
+import { ProfileImage } from "@/components/ui/ProfileImage";
+import { GOZDE_IMAGES } from "@/lib/images";
 import { Award, BookOpen, Globe, GraduationCap, Heart, Target } from "lucide-react";
 
 type Props = {
@@ -46,14 +48,16 @@ export default async function AboutPage({ params }: Props) {
             <p className="text-navy/70">{t("bio2")}</p>
             <p className="text-navy/70">{t("bio3")}</p>
           </div>
-          <div className="glass-card rounded-3xl p-8">
-            <div className="mb-6 flex h-48 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald/10 to-navy/10">
-              <div className="text-center">
-                <div className="mx-auto mb-3 flex h-24 w-24 items-center justify-center rounded-full bg-white text-3xl font-bold text-navy shadow-lg">GA</div>
-                <p className="font-heading font-bold text-navy">Gözde Akın</p>
-              </div>
+          <div className="glass-card overflow-hidden rounded-3xl">
+            <div className="relative aspect-[4/5]">
+              <ProfileImage
+                src={GOZDE_IMAGES.profileOffice}
+                alt="Uzman Diyetisyen & Psikolog Gözde Akın"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 p-6 pt-0">
               {[t("role1"), t("role2"), t("role3")].map((role) => (
                 <span key={role} className="rounded-full bg-emerald/10 px-3 py-1 text-xs font-medium text-emerald">{role}</span>
               ))}
