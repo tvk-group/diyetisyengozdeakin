@@ -17,7 +17,7 @@ export async function Footer() {
   ];
 
   return (
-    <footer className="bg-navy text-white">
+    <footer className="bg-navy text-white pb-[calc(4.75rem+env(safe-area-inset-bottom))] md:pb-0">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>

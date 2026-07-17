@@ -268,5 +268,18 @@
     "expertDietitian": "Expert Dietitian & Psychologist",
     "memorialGroup": "Health Group",
     "imageAlt": "Expert Dietitian & Psychologist Gözde Akın — Memorial Health Group"
+  },
+  "pwa": {
+    "tabBarLabel": "Main navigation",
+    "home": "Home",
+    "services": "Services",
+    "calculators": "Tools",
+    "blog": "Blog",
+    "contact": "Contact",
+    "installTitle": "Install App",
+    "installDesc": "Add to home screen for quick access and offline reading.",
+    "installButton": "Add to Home Screen",
+    "iosHint": "In Safari: Share → Add to Home Screen.",
+    "dismiss": "Close"
   }
 }

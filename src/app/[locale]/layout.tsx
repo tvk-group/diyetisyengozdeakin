@@ -1,3 +1,4 @@
+import type { Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -5,6 +6,7 @@ import { Manrope, Inter } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { PwaShell } from "@/components/pwa/PwaShell";
 import { RTL_LOCALES, SITE_CONFIG } from "@/lib/constants";
 import { getAlternates, organizationJsonLd } from "@/lib/seo";
 import "../globals.css";
@@ -26,6 +28,15 @@ type Props = {
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
+}
+
+export function generateViewport(): Viewport {
+  return {
+    themeColor: "#1B2A4A",
+    width: "device-width",
+    initialScale: 1,
+    viewportFit: "cover",
+  };
 }
 
 export async function generateMetadata({ params }: Props) {
@@ -52,6 +63,23 @@ export async function generateMetadata({ params }: Props) {
       description: t("description"),
       images: ["/images/gozde/profile.jpg"],
     },
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: "default",
+      title: "Gözde Akın",
+    },
+    applicationName: "Gözde Akın",
+    manifest: "/manifest.webmanifest",
+    icons: {
+      icon: [
+        { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+        { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+      ],
+      apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    },
+    other: {
+      "mobile-web-app-capable": "yes",
+    },
   };
 }
 
@@ -73,8 +101,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }} />
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 pb-[calc(4.75rem+env(safe-area-inset-bottom))] md:pb-0">{children}</main>
           <Footer />
+          <PwaShell />
         </NextIntlClientProvider>
       </body>
     </html>

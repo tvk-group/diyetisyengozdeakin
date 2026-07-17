@@ -268,5 +268,18 @@
     "expertDietitian": "Diététicienne & Psychologue",
     "memorialGroup": "Groupe de santé",
     "imageAlt": "Diététicienne & Psychologue Gözde Akın — Memorial"
+  },
+  "pwa": {
+    "tabBarLabel": "Navigation principale",
+    "home": "Accueil",
+    "services": "Services",
+    "calculators": "Outils",
+    "blog": "Blog",
+    "contact": "Contact",
+    "installTitle": "Installer l'app",
+    "installDesc": "Ajoutez à l'écran d'accueil pour un accès rapide.",
+    "installButton": "Ajouter à l'écran d'accueil",
+    "iosHint": "Dans Safari : Partager → Sur l'écran d'accueil.",
+    "dismiss": "Fermer"
   }
 }

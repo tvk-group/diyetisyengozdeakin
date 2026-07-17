@@ -268,5 +268,18 @@
     "expertDietitian": "Диетолог и психолог",
     "memorialGroup": "Группа здравоохранения",
     "imageAlt": "Диетолог и психолог Гёзде Акын — Memorial"
+  },
+  "pwa": {
+    "tabBarLabel": "Главная навигация",
+    "home": "Главная",
+    "services": "Услуги",
+    "calculators": "Расчёт",
+    "blog": "Блог",
+    "contact": "Контакт",
+    "installTitle": "Установить приложение",
+    "installDesc": "Добавьте на главный экран для быстрого доступа.",
+    "installButton": "На главный экран",
+    "iosHint": "В Safari: Поделиться → На экран «Домой».",
+    "dismiss": "Закрыть"
   }
 }
