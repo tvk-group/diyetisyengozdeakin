@@ -9,8 +9,24 @@ export const SITE_CONFIG = {
   whatsapp: "https://wa.me/905389359214",
   instagram: "https://www.instagram.com/diyetisyengozdeakin/",
   instagramHandle: "@diyetisyengozdeakin",
+  linkedin:
+    "https://www.linkedin.com/in/g%C3%B6zde-akin-3a09a8106?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   memorialHandle: "@memorialsaglik",
+  memorialProfile: "https://www.memorial.com.tr/doktorlar/gozde-serin",
 } as const;
+
+export const YOUTUBE_VIDEOS = [
+  {
+    id: "keto",
+    videoId: "mwosCkjruR0",
+    titleKey: "video1Title",
+  },
+  {
+    id: "thyroid-pcos",
+    videoId: "ganblUqgs4s",
+    titleKey: "video2Title",
+  },
+] as const;
 
 export const HOSPITALS = [
   {

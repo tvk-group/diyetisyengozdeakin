@@ -191,6 +191,13 @@
     "reel5Subtitle": "История успеха Memorial",
     "followMore": "Подписывайтесь, чтобы узнать больше"
   },
+  "youtube": {
+    "sectionTitle": "YouTube",
+    "title": "Видеоконтент",
+    "subtitle": "Экспертные видео о питании и здоровье",
+    "video1Title": "Что такое кетогенная диета?",
+    "video2Title": "На что должны обращать внимание пациенты с заболеваниями щитовидной железы и СПКЯ в питании?"
+  },
   "faq": {
     "sectionTitle": "Часто задаваемые вопросы",
     "title": "Ответы на ваши вопросы",
@@ -217,6 +224,7 @@
     "contact": "Контакты",
     "hospitals": "Больницы",
     "followUs": "Подписывайтесь",
+    "memorialProfile": "Профиль врача Memorial",
     "rights": "Все права защищены."
   },
   "contact": {
@@ -232,6 +240,8 @@
     "whatsapp": "Написать в WhatsApp",
     "whatsappDesc": "Свяжитесь с нами в WhatsApp для быстрой записи.",
     "mapTitle": "Местоположение",
+    "memorialProfile": "Профиль врача Memorial",
+    "linkedinDesc": "Профессиональная сеть и карьера",
     "formSuccess": "Ваше сообщение получено."
   },
   "blog": {

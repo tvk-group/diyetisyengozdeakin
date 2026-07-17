@@ -6,6 +6,7 @@ import { HealthCalculators } from "@/components/home/HealthCalculators";
 import { PatientJourney } from "@/components/home/PatientJourney";
 import { SuccessStories } from "@/components/home/SuccessStories";
 import { InstagramReels } from "@/components/home/InstagramReels";
+import { YouTubeVideos } from "@/components/home/YouTubeVideos";
 import { FAQ } from "@/components/home/FAQ";
 import { CTA } from "@/components/home/CTA";
 import { setRequestLocale } from "next-intl/server";
@@ -39,7 +40,7 @@ export default async function HomePage({ params }: Props) {
       addressLocality: "İstanbul",
       addressCountry: "TR",
     },
-    sameAs: [SITE_CONFIG.instagram],
+    sameAs: [SITE_CONFIG.instagram, SITE_CONFIG.linkedin, SITE_CONFIG.memorialProfile],
   };
 
   return (
@@ -55,6 +56,7 @@ export default async function HomePage({ params }: Props) {
       <HealthCalculators />
       <PatientJourney />
       <SuccessStories />
+      <YouTubeVideos />
       <InstagramReels />
       <FAQ />
       <CTA />

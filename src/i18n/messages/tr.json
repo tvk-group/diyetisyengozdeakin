@@ -191,6 +191,13 @@
     "reel5Subtitle": "Memorial başarı hikayesi",
     "followMore": "Daha fazlası için takip edin"
   },
+  "youtube": {
+    "sectionTitle": "YouTube",
+    "title": "Video İçerikler",
+    "subtitle": "Beslenme ve sağlık üzerine uzman videolar",
+    "video1Title": "Ketojenik Diyet Nedir?",
+    "video2Title": "Tiroid ve PKOS Hastaları Beslenmede Nelere Dikkat Etmelidir?"
+  },
   "faq": {
     "sectionTitle": "Sıkça Sorulan Sorular",
     "title": "Merak Ettikleriniz",
@@ -217,6 +224,7 @@
     "contact": "İletişim",
     "hospitals": "Hastaneler",
     "followUs": "Bizi Takip Edin",
+    "memorialProfile": "Memorial Doktor Profili",
     "rights": "Tüm hakları saklıdır."
   },
   "contact": {
@@ -232,6 +240,8 @@
     "whatsapp": "WhatsApp ile Yazın",
     "whatsappDesc": "Hızlı randevu ve sorularınız için WhatsApp üzerinden ulaşın.",
     "mapTitle": "Konum",
+    "memorialProfile": "Memorial Doktor Profili",
+    "linkedinDesc": "Profesyonel ağ ve kariyer",
     "formSuccess": "Mesajınız alındı. En kısa sürede dönüş yapacağız."
   },
   "blog": {

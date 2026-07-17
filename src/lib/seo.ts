@@ -29,7 +29,12 @@ export function organizationJsonLd(locale: string) {
       addressLocality: "İstanbul",
       addressCountry: "TR",
     },
-    sameAs: [SITE_CONFIG.instagram, SITE_CONFIG.whatsapp],
+    sameAs: [
+      SITE_CONFIG.instagram,
+      SITE_CONFIG.linkedin,
+      SITE_CONFIG.memorialProfile,
+      SITE_CONFIG.whatsapp,
+    ],
     availableLanguage: LOCALES,
     inLanguage: locale,
   };

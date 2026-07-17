@@ -42,9 +42,14 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="mb-8 mt-[96px] flex justify-center sm:mb-10"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-memorial-red/20 bg-memorial-red/5 px-4 py-1.5 text-sm font-medium text-memorial-red">
+          <a
+            href={SITE_CONFIG.memorialProfile}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-memorial-red/20 bg-memorial-red/5 px-4 py-1.5 text-sm font-medium text-memorial-red transition-colors hover:border-memorial-red/40 hover:bg-memorial-red/10"
+          >
             {t("badge")}
-          </span>
+          </a>
         </motion.div>
 
         <div className="grid items-center gap-12 lg:grid-cols-2">
