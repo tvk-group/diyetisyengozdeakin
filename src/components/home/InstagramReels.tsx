@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { INSTAGRAM_REELS } from "@/lib/images";
 import { SITE_CONFIG } from "@/lib/constants";
+import { cn } from "@/lib/utils";
 
 function ReelCard({
   reel,
@@ -24,12 +25,20 @@ function ReelCard({
         alt={title}
         fill
         sizes="(max-width: 640px) 50vw, 20vw"
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
+        className={cn(
+          "object-cover transition-transform duration-500 group-hover:scale-105",
+          reel.imageFit === "contain" && "object-contain p-2 group-hover:scale-100"
+        )}
         onError={(e) => {
           e.currentTarget.style.display = "none";
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent" />
+      <div
+        className={cn(
+          "absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent",
+          reel.imageFit === "contain" && "from-navy/75 via-transparent to-transparent"
+        )}
+      />
       <div className="absolute inset-0 flex flex-col justify-end p-5">
         <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-colors group-hover:bg-memorial-red">
           <Play className="h-4 w-4 fill-white text-white" />
@@ -43,7 +52,7 @@ function ReelCard({
   );
 
   const className =
-    "group relative aspect-[9/16] overflow-hidden rounded-3xl bg-navy shadow-xl transition-transform duration-300 hover:scale-[1.02]";
+    "group relative aspect-[9/16] overflow-hidden rounded-3xl bg-light-gray shadow-xl transition-transform duration-300 hover:scale-[1.02]";
 
   if (reel.href) {
     return (
