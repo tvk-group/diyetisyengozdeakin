@@ -1,7 +1,8 @@
 import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
 import type { ServiceSlug } from "@/content/services/services";
-import { SERVICE_THEMES } from "@/lib/service-themes";
+import { getServiceTheme } from "@/lib/card-themes";
+import { ThemedCard } from "@/components/ui/ThemedCard";
 
 type Props = {
   slug: ServiceSlug;
@@ -10,21 +11,12 @@ type Props = {
 };
 
 export function ServiceCard({ slug, name, cta }: Props) {
-  const theme = SERVICE_THEMES[slug];
+  const theme = getServiceTheme(slug);
   const Icon = theme.Icon;
 
   return (
-    <Link
-      href={`/hizmetler/${slug}`}
-      className="group relative overflow-hidden rounded-2xl border border-white/70 p-8 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-emerald/10"
-    >
-      <div className={`absolute inset-0 bg-gradient-to-br ${theme.gradient}`} aria-hidden />
-      <Icon
-        className={`pointer-events-none absolute -right-5 -top-5 h-28 w-28 ${theme.decorColor} transition-transform duration-300 group-hover:scale-110`}
-        strokeWidth={1.25}
-        aria-hidden
-      />
-      <div className="relative z-10">
+    <Link href={`/hizmetler/${slug}`} className="block">
+      <ThemedCard theme={theme} showDecor decorSize="lg" className="p-8 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-emerald/10">
         <div
           className={`mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl ${theme.iconBg} ${theme.iconColor} transition-colors group-hover:bg-white/80`}
         >
@@ -37,7 +29,7 @@ export function ServiceCard({ slug, name, cta }: Props) {
           {cta}
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </span>
-      </div>
+      </ThemedCard>
     </Link>
   );
 }

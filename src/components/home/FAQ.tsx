@@ -4,7 +4,11 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { ChevronDown, Search } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
+import { ThemedCard } from "@/components/ui/ThemedCard";
+import { getJourneyTheme, type JourneyStepKey } from "@/lib/card-themes";
 import { cn } from "@/lib/utils";
+
+const FAQ_THEMES: JourneyStepKey[] = ["step1", "step2", "step3", "step4", "step5"];
 
 export function FAQ() {
   const t = useTranslations("faq");
@@ -40,30 +44,33 @@ export function FAQ() {
           />
         </div>
         <div className="space-y-3">
-          {filtered.map((faq, i) => (
-            <div key={faq.q} className="overflow-hidden rounded-2xl bg-white shadow-sm">
-              <button
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="flex w-full items-center justify-between p-6 text-left"
-              >
-                <span className="font-heading pr-4 font-semibold text-navy">{faq.q}</span>
-                <ChevronDown
+          {filtered.map((faq, i) => {
+            const theme = getJourneyTheme(FAQ_THEMES[i % FAQ_THEMES.length]);
+            return (
+              <ThemedCard key={faq.q} theme={theme} showDecor={false} className="overflow-hidden">
+                <button
+                  onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                  className="flex w-full items-center justify-between p-6 text-left"
+                >
+                  <span className="font-heading pr-4 font-semibold text-navy">{faq.q}</span>
+                  <ChevronDown
+                    className={cn(
+                      "h-5 w-5 shrink-0 text-navy/40 transition-transform duration-300",
+                      openIndex === i && "rotate-180"
+                    )}
+                  />
+                </button>
+                <div
                   className={cn(
-                    "h-5 w-5 shrink-0 text-navy/40 transition-transform duration-300",
-                    openIndex === i && "rotate-180"
+                    "overflow-hidden transition-all duration-300",
+                    openIndex === i ? "max-h-96" : "max-h-0"
                   )}
-                />
-              </button>
-              <div
-                className={cn(
-                  "overflow-hidden transition-all duration-300",
-                  openIndex === i ? "max-h-96" : "max-h-0"
-                )}
-              >
-                <p className="px-6 pb-6 text-navy/60">{faq.a}</p>
-              </div>
-            </div>
-          ))}
+                >
+                  <p className="px-6 pb-6 text-navy/60">{faq.a}</p>
+                </div>
+              </ThemedCard>
+            );
+          })}
         </div>
       </div>
     </Section>

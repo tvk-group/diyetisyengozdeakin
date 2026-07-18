@@ -2,15 +2,16 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { GOZDE_IMAGES } from "@/lib/images";
-import { Scale, TrendingDown, Users } from "lucide-react";
+import { getSuccessMetricTheme, type SuccessMetricKey } from "@/lib/card-themes";
+import { MetricCard } from "@/components/ui/ThemedCard";
 
 export async function SuccessStories() {
   const t = await getTranslations("testimonials");
 
-  const metrics = [
-    { icon: Scale, value: "-2.9 kg", label: t("weightLoss") },
-    { icon: TrendingDown, value: "-2.4%", label: t("fatRatio") },
-    { icon: Users, value: "3", label: t("teamSupport") },
+  const metrics: { key: SuccessMetricKey; value: string; label: string }[] = [
+    { key: "weightLoss", value: "-2.9 kg", label: t("weightLoss") },
+    { key: "fatRatio", value: "-2.4%", label: t("fatRatio") },
+    { key: "teamSupport", value: "3", label: t("teamSupport") },
   ];
 
   return (
@@ -41,12 +42,13 @@ export async function SuccessStories() {
           </div>
           <p className="text-navy/70 leading-relaxed">{t("storyDesc")}</p>
           <div className="grid grid-cols-3 gap-4">
-            {metrics.map(({ icon: Icon, value, label }) => (
-              <div key={label} className="glass-card rounded-2xl p-4 text-center">
-                <Icon className="mx-auto mb-2 h-6 w-6 text-memorial-red" />
-                <p className="font-heading text-xl font-bold text-navy">{value}</p>
-                <p className="mt-1 text-xs text-navy/60">{label}</p>
-              </div>
+            {metrics.map(({ key, value, label }) => (
+              <MetricCard
+                key={key}
+                theme={getSuccessMetricTheme(key)}
+                value={value}
+                label={label}
+              />
             ))}
           </div>
           <blockquote className="rounded-2xl border-l-4 border-emerald bg-emerald/5 p-6">
