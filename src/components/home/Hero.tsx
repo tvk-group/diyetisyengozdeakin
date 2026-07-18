@@ -2,9 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle, Video } from "lucide-react";
-import { Button } from "@/components/ui/Button";
 import { BrandBanner } from "@/components/brand/BrandBanner";
+import { HeroActionCards } from "@/components/home/HeroActionCards";
 import { ProfileImage } from "@/components/ui/ProfileImage";
 import { SITE_CONFIG } from "@/lib/constants";
 import { GOZDE_IMAGES } from "@/lib/images";
@@ -52,11 +51,12 @@ export function Hero() {
           </a>
         </motion.div>
 
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="relative z-10 grid items-center gap-12 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
+            className="relative z-10"
           >
             <h1 className="font-heading text-4xl font-bold leading-tight tracking-tight text-navy md:text-5xl lg:text-6xl">
               <span className="block">{t("title1")}</span>
@@ -64,20 +64,7 @@ export function Hero() {
               <span className="block">{t("title3")}</span>
             </h1>
             <p className="mt-6 max-w-lg text-lg text-navy/60">{t("subtitle")}</p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Button href={SITE_CONFIG.whatsapp}>
-                {t("ctaAppointment")}
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-              <Button href="/online-danismanlik" variant="outline">
-                <Video className="h-4 w-4" />
-                {t("ctaOnline")}
-              </Button>
-              <Button href={SITE_CONFIG.whatsapp} variant="secondary">
-                <MessageCircle className="h-4 w-4" />
-                {t("ctaWhatsapp")}
-              </Button>
-            </div>
+            <HeroActionCards />
           </motion.div>
 
           <motion.div
