@@ -3,7 +3,10 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { blogPosts, getLocalizedPost } from "@/content/blog/posts";
+import { getBlogCategoryTheme } from "@/lib/card-themes";
+import { ThemedCard } from "@/components/ui/ThemedCard";
 import { ArrowRight, Clock } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -26,18 +29,30 @@ export default async function BlogPage({ params }: Props) {
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {blogPosts.map((post) => {
           const localized = getLocalizedPost(post, locale);
+          const theme = getBlogCategoryTheme(post.category);
+          const CategoryIcon = theme.Icon;
+
           return (
-            <article key={post.slug} className="group glass-card flex flex-col overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-xl">
-              <div className="relative h-48 bg-gradient-to-br from-emerald/20 to-navy/10">
+            <ThemedCard
+              key={post.slug}
+              theme={theme}
+              showDecor={false}
+              className="flex flex-col overflow-hidden"
+            >
+              <div className={cn("relative h-48 bg-gradient-to-br", theme.gradient)}>
                 {post.thumbnail && (
                   <Image
                     src={post.thumbnail}
                     alt={localized.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover opacity-90 transition-transform duration-500 group-hover:scale-105"
                   />
                 )}
+                <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-navy shadow-sm">
+                  <CategoryIcon className={cn("h-3.5 w-3.5", theme.iconColor)} />
+                  {post.category}
+                </div>
               </div>
               <div className="flex flex-1 flex-col p-6">
                 <div className="mb-2 flex items-center gap-2 text-xs text-navy/50">
@@ -58,7 +73,7 @@ export default async function BlogPage({ params }: Props) {
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
-            </article>
+            </ThemedCard>
           );
         })}
       </div>

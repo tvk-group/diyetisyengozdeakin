@@ -2,8 +2,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { ContactForm } from "@/components/contact/ContactForm";
+import { ThemedContactRow } from "@/components/ui/ThemedCard";
 import { SITE_CONFIG, HOSPITALS } from "@/lib/constants";
-import { Mail, MapPin, MessageCircle, Phone, Clock, AtSign, Link2, ExternalLink } from "lucide-react";
+import { getContactTheme } from "@/lib/card-themes";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -30,87 +31,60 @@ export default async function ContactPage({ params }: Props) {
       </Section>
       <Section>
         <div className="grid gap-12 lg:grid-cols-2">
-          <div className="space-y-6">
-            <a
+          <div className="space-y-4">
+            <ThemedContactRow
+              theme={getContactTheme("whatsapp")}
               href={SITE_CONFIG.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 rounded-2xl bg-emerald/10 p-6 transition-colors hover:bg-emerald/15"
+              external
             >
-              <MessageCircle className="h-6 w-6 text-emerald" />
-              <div>
-                <p className="font-medium text-navy">{t("whatsapp")}</p>
-                <p className="text-sm text-navy/60">{t("whatsappDesc")}</p>
-              </div>
-            </a>
-            <a href={`mailto:${SITE_CONFIG.email}`} className="flex items-center gap-4 rounded-2xl bg-light-gray p-6 transition-colors hover:bg-emerald/5">
-              <Mail className="h-6 w-6 text-memorial-red" />
-              <div>
-                <p className="text-sm text-navy/50">{t("email")}</p>
-                <p className="font-medium text-navy">{SITE_CONFIG.email}</p>
-              </div>
-            </a>
-            <a href={`tel:${SITE_CONFIG.phoneRaw}`} className="flex items-center gap-4 rounded-2xl bg-light-gray p-6 transition-colors hover:bg-emerald/5">
-              <Phone className="h-6 w-6 text-memorial-red" />
-              <div>
-                <p className="text-sm text-navy/50">{t("phone")}</p>
-                <p className="font-medium text-navy">{SITE_CONFIG.phone}</p>
-              </div>
-            </a>
-            <div className="flex items-center gap-4 rounded-2xl bg-light-gray p-6">
-              <Clock className="h-6 w-6 text-memorial-red" />
-              <div>
-                <p className="text-sm text-navy/50">{t("workingHours")}</p>
-                <p className="font-medium text-navy">{t("workingHoursValue")}</p>
-              </div>
-            </div>
+              <p className="font-medium text-navy">{t("whatsapp")}</p>
+              <p className="text-sm text-navy/60">{t("whatsappDesc")}</p>
+            </ThemedContactRow>
+            <ThemedContactRow theme={getContactTheme("email")} href={`mailto:${SITE_CONFIG.email}`}>
+              <p className="text-sm text-navy/50">{t("email")}</p>
+              <p className="font-medium text-navy">{SITE_CONFIG.email}</p>
+            </ThemedContactRow>
+            <ThemedContactRow theme={getContactTheme("phone")} href={`tel:${SITE_CONFIG.phoneRaw}`}>
+              <p className="text-sm text-navy/50">{t("phone")}</p>
+              <p className="font-medium text-navy">{SITE_CONFIG.phone}</p>
+            </ThemedContactRow>
+            <ThemedContactRow theme={getContactTheme("hours")}>
+              <p className="text-sm text-navy/50">{t("workingHours")}</p>
+              <p className="font-medium text-navy">{t("workingHoursValue")}</p>
+            </ThemedContactRow>
             {HOSPITALS.map((h) => (
-              <div key={h.id} className="flex items-center gap-4 rounded-2xl bg-light-gray p-6">
-                <MapPin className="h-6 w-6 text-emerald" />
-                <div>
-                  <p className="font-medium text-navy">{h.name}</p>
-                  <p className="text-sm text-navy/50">{h.district}, {h.city}</p>
-                </div>
-              </div>
+              <ThemedContactRow key={h.id} theme={getContactTheme("hospital")}>
+                <p className="font-medium text-navy">{h.name}</p>
+                <p className="text-sm text-navy/50">
+                  {h.district}, {h.city}
+                </p>
+              </ThemedContactRow>
             ))}
-            <a
+            <ThemedContactRow
+              theme={getContactTheme("memorial")}
               href={SITE_CONFIG.memorialProfile}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 rounded-2xl bg-memorial-red/5 p-6 transition-colors hover:bg-memorial-red/10"
+              external
             >
-              <ExternalLink className="h-6 w-6 text-memorial-red" />
-              <div>
-                <p className="font-medium text-navy">{t("memorialProfile")}</p>
-                <p className="text-sm text-navy/50">memorial.com.tr</p>
-              </div>
-            </a>
-            <a
+              <p className="font-medium text-navy">{t("memorialProfile")}</p>
+              <p className="text-sm text-navy/50">memorial.com.tr</p>
+            </ThemedContactRow>
+            <ThemedContactRow
+              theme={getContactTheme("instagram")}
               href={SITE_CONFIG.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 rounded-2xl bg-light-gray p-6 transition-colors hover:bg-emerald/5"
+              external
             >
-              <AtSign className="h-6 w-6 text-memorial-red" />
-              <div>
-                <p className="font-medium text-navy">Instagram</p>
-                <p className="text-sm text-navy/50">{SITE_CONFIG.instagramHandle}</p>
-              </div>
-            </a>
-            <a
+              <p className="font-medium text-navy">Instagram</p>
+              <p className="text-sm text-navy/50">{SITE_CONFIG.instagramHandle}</p>
+            </ThemedContactRow>
+            <ThemedContactRow
+              theme={getContactTheme("linkedin")}
               href={SITE_CONFIG.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 rounded-2xl bg-light-gray p-6 transition-colors hover:bg-emerald/5"
+              external
             >
-              <Link2 className="h-6 w-6 text-memorial-red" />
-              <div>
-                <p className="font-medium text-navy">LinkedIn</p>
-                <p className="text-sm text-navy/50">{t("linkedinDesc")}</p>
-              </div>
-            </a>
+              <p className="font-medium text-navy">LinkedIn</p>
+              <p className="text-sm text-navy/50">{t("linkedinDesc")}</p>
+            </ThemedContactRow>
             <Button href={SITE_CONFIG.whatsapp} className="w-full sm:w-auto">
-              <MessageCircle className="h-4 w-4" />
               {t("whatsapp")}
             </Button>
           </div>

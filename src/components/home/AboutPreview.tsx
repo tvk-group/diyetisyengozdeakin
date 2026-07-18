@@ -4,7 +4,13 @@ import { Section, SectionHeader } from "@/components/ui/Section";
 import { ProfileImage } from "@/components/ui/ProfileImage";
 import { GOZDE_IMAGES } from "@/lib/images";
 import { SITE_CONFIG } from "@/lib/constants";
+import { getAboutStatTheme, type AboutStatKey } from "@/lib/card-themes";
+import { ThemedCard } from "@/components/ui/ThemedCard";
 import { ArrowRight, Award, Brain, Heart, Stethoscope } from "lucide-react";
+
+const STAT_KEYS: AboutStatKey[] = ["stat1", "stat3", "stat2", "stat4"];
+const STAT_VALUE_KEYS = ["stat1Value", "stat3Value", "stat2Value", "stat4Value"] as const;
+const STAT_LABEL_KEYS = ["stat1Label", "stat3Label", "stat2Label", "stat4Label"] as const;
 
 export async function AboutPreview() {
   const t = await getTranslations("about");
@@ -20,7 +26,12 @@ export async function AboutPreview() {
     <Section id="hakkimda" variant="light">
       <SectionHeader badge={t("sectionTitle")} title={t("title")} subtitle={t("intro")} />
       <div className="grid items-center gap-12 lg:grid-cols-2">
-        <div className="glass-card rounded-3xl p-8 md:p-12">
+        <ThemedCard
+          theme={getAboutStatTheme("stat1")}
+          showDecor
+          decorSize="lg"
+          className="rounded-3xl p-8 md:p-12"
+        >
           <div className="mb-6 flex flex-wrap gap-3">
             {roles.map(({ icon: Icon, label }) => (
               <span
@@ -51,7 +62,7 @@ export async function AboutPreview() {
             {t("readMore")}
             <ArrowRight className="h-4 w-4" />
           </Link>
-        </div>
+        </ThemedCard>
         <div className="space-y-6">
           <div className="glass-card relative aspect-[4/5] overflow-hidden rounded-3xl">
             <ProfileImage
@@ -62,17 +73,18 @@ export async function AboutPreview() {
             />
           </div>
           <div className="mt-8 grid grid-cols-2 gap-4">
-          {[
-            { value: t("stat1Value"), label: t("stat1Label") },
-            { value: t("stat3Value"), label: t("stat3Label") },
-            { value: t("stat2Value"), label: t("stat2Label") },
-            { value: t("stat4Value"), label: t("stat4Label") },
-          ].map((stat) => (
-            <div key={stat.label} className="glass-card rounded-2xl p-6 text-center">
-              <p className="font-heading text-3xl font-bold text-navy">{stat.value}</p>
-              <p className="mt-1 text-sm text-navy/60">{stat.label}</p>
-            </div>
-          ))}
+            {STAT_KEYS.map((key, i) => (
+              <ThemedCard
+                key={key}
+                theme={getAboutStatTheme(key)}
+                showDecor
+                decorSize="sm"
+                className="p-6 text-center"
+              >
+                <p className="font-heading text-3xl font-bold text-navy">{t(STAT_VALUE_KEYS[i])}</p>
+                <p className="mt-1 text-sm text-navy/60">{t(STAT_LABEL_KEYS[i])}</p>
+              </ThemedCard>
+            ))}
           </div>
         </div>
       </div>

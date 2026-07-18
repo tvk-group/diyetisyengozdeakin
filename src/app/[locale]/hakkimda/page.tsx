@@ -1,7 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { ProfileImage } from "@/components/ui/ProfileImage";
+import { ThemedCard } from "@/components/ui/ThemedCard";
 import { GOZDE_IMAGES } from "@/lib/images";
+import { getAboutStatTheme } from "@/lib/card-themes";
 import { Award, BookOpen, Globe, GraduationCap, Heart, Target } from "lucide-react";
 
 type Props = {
@@ -36,7 +38,7 @@ export default async function AboutPage({ params }: Props) {
             <p className="text-navy/70">{t("bio2")}</p>
             <p className="text-navy/70">{t("bio3")}</p>
           </div>
-          <div className="glass-card overflow-hidden rounded-3xl">
+          <ThemedCard theme={getAboutStatTheme("stat1")} showDecor decorSize="lg" className="overflow-hidden rounded-3xl">
             <div className="relative aspect-[4/5]">
               <ProfileImage
                 src={GOZDE_IMAGES.profileOffice}
@@ -47,16 +49,18 @@ export default async function AboutPage({ params }: Props) {
             </div>
             <div className="flex flex-wrap gap-2 p-6 pt-0">
               {[t("role1"), t("role2"), t("role3")].map((role) => (
-                <span key={role} className="rounded-full bg-emerald/10 px-3 py-1 text-xs font-medium text-emerald">{role}</span>
+                <span key={role} className="rounded-full bg-emerald/10 px-3 py-1 text-xs font-medium text-emerald">
+                  {role}
+                </span>
               ))}
             </div>
-          </div>
+          </ThemedCard>
         </div>
       </Section>
 
       <Section variant="light">
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="glass-card rounded-3xl p-8">
+          <ThemedCard theme={getAboutStatTheme("stat1")} showDecor={false} className="rounded-3xl p-8">
             <div className="mb-4 flex items-center gap-3">
               <GraduationCap className="h-6 w-6 text-memorial-red" />
               <h2 className="font-heading text-xl font-bold text-navy">{t("education")}</h2>
@@ -69,8 +73,8 @@ export default async function AboutPage({ params }: Props) {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="glass-card rounded-3xl p-8">
+          </ThemedCard>
+          <ThemedCard theme={getAboutStatTheme("stat3")} showDecor={false} className="rounded-3xl p-8">
             <div className="mb-4 flex items-center gap-3">
               <Award className="h-6 w-6 text-memorial-red" />
               <h2 className="font-heading text-xl font-bold text-navy">{t("experience")}</h2>
@@ -83,7 +87,7 @@ export default async function AboutPage({ params }: Props) {
                 </li>
               ))}
             </ul>
-          </div>
+          </ThemedCard>
         </div>
       </Section>
 
