@@ -6,6 +6,8 @@ import { Download, X } from "lucide-react";
 import Image from "next/image";
 import { BRAND_IMAGES } from "@/lib/brand";
 import { cn } from "@/lib/utils";
+import { allowsPreferences } from "@/lib/consent";
+import { CONSENT_CHANGE_EVENT } from "@/lib/consent";
 
 const DISMISS_KEY = "gozde-pwa-install-dismissed";
 
@@ -37,7 +39,7 @@ export function InstallPrompt() {
       const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
       setIsIos(ios);
 
-      if (standalone || dismissed) return;
+      if (standalone || dismissed || !allowsPreferences()) return;
 
       if (ios) {
         setTimeout(() => setVisible(true), 4000);
@@ -52,10 +54,12 @@ export function InstallPrompt() {
 
     const timer = window.setTimeout(init, 0);
     window.addEventListener("beforeinstallprompt", onBeforeInstall);
+    window.addEventListener(CONSENT_CHANGE_EVENT, init);
 
     return () => {
       window.clearTimeout(timer);
       window.removeEventListener("beforeinstallprompt", onBeforeInstall);
+      window.removeEventListener(CONSENT_CHANGE_EVENT, init);
     };
   }, []);
 

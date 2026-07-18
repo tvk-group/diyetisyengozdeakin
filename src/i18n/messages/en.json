@@ -199,7 +199,8 @@
     "video2Title": "What Should Thyroid and PCOS Patients Pay Attention to in Nutrition?",
     "video3Title": "Diet Tips — Coping with Stress",
     "video4Title": "Words from Our Parents",
-    "video5Title": "Is It Possible to Overcome Obesity Through Diet Alone?"
+    "video5Title": "Is It Possible to Overcome Obesity Through Diet Alone?",
+    "consentRequired": "Accept functional or marketing cookies in your preferences to play this video."
   },
   "faq": {
     "sectionTitle": "Frequently Asked Questions",
@@ -230,6 +231,8 @@
     "hospitals": "Hospitals",
     "followUs": "Follow Us",
     "memorialProfile": "Memorial Doctor Profile",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
     "rights": "All rights reserved."
   },
   "contact": {
@@ -296,5 +299,109 @@
     "installButton": "Add to Home Screen",
     "iosHint": "In Safari: Share → Add to Home Screen.",
     "dismiss": "Close"
+  },
+  "legal": {
+    "consent": {
+      "title": "Cookie & Privacy Preferences",
+      "description": "We use cookies to improve your experience and deliver the site securely. Manage your preferences below. See our",
+      "and": "and",
+      "privacyLink": "Privacy Policy",
+      "cookieLink": "Cookie Policy",
+      "acceptAll": "Accept All",
+      "essentialOnly": "Essential Only",
+      "customize": "Settings",
+      "save": "Save Preferences",
+      "necessary": "Essential cookies",
+      "necessaryDesc": "Required for site operation, security, and saving your preferences.",
+      "preferences": "Functional cookies",
+      "preferencesDesc": "Used for PWA, language preferences, and embedded videos.",
+      "analytics": "Analytics cookies",
+      "analyticsDesc": "Help us understand visitor statistics anonymously.",
+      "marketing": "Marketing cookies",
+      "marketingDesc": "Used for personalized content and campaign measurement."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: July 18, 2026",
+      "sections": [
+        {
+          "title": "Data Controller",
+          "paragraphs": [
+            "This website is operated by Expert Dietitian & Psychologist Gözde Akın. Contact: dytgozdeakin@gmail.com, +90 (0) 538 935 92 14.",
+            "Personal data is processed in accordance with Turkish Law No. 6698 on the Protection of Personal Data (KVKK)."
+          ]
+        },
+        {
+          "title": "Data We Collect",
+          "paragraphs": [
+            "Via the contact form: name, email, phone, and message content. Via technical logs: IP address, browser information, and cookie data may be processed.",
+            "Health-related information shared during consultation is processed only to the extent necessary to provide services."
+          ]
+        },
+        {
+          "title": "Purposes of Processing",
+          "paragraphs": [
+            "Responding to appointment requests, providing consultation services, website security and improvement, and fulfilling legal obligations.",
+            "With your explicit consent, informational and communication activities may be carried out."
+          ]
+        },
+        {
+          "title": "Legal Basis",
+          "paragraphs": [
+            "Under KVKK Art. 5/2: contract performance, legal obligation, legitimate interest. Where explicit consent is required, KVKK Art. 5/1 applies."
+          ]
+        },
+        {
+          "title": "Retention Period",
+          "paragraphs": [
+            "Personal data is retained for the period required by the processing purpose and applicable statute of limitations, then deleted, destroyed, or anonymized."
+          ]
+        },
+        {
+          "title": "Your Rights",
+          "paragraphs": [
+            "Under KVKK Art. 11, you have the right to learn whether your data is processed, request information, correction, deletion, objection, and compensation for damages.",
+            "You may submit requests to dytgozdeakin@gmail.com."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "updated": "Last updated: July 18, 2026",
+      "sections": [
+        {
+          "title": "What Are Cookies?",
+          "paragraphs": [
+            "Cookies are small text files stored on your device when you visit a website. They may be used for functionality, security, and remembering preferences."
+          ]
+        },
+        {
+          "title": "Types of Cookies We Use",
+          "paragraphs": [
+            "Essential cookies: Required for session security, cookie preference storage, and basic site functions.",
+            "Functional cookies: Used for PWA installation, language preferences, and embedded YouTube videos.",
+            "Analytics cookies: May be used to measure site traffic anonymously (only with your consent).",
+            "Marketing cookies: May be used for personalized content and campaign measurement (only with your consent)."
+          ]
+        },
+        {
+          "title": "Third-Party Services",
+          "paragraphs": [
+            "Embedded YouTube videos are provided by Google/YouTube and subject to their cookie policies.",
+            "Cloudflare infrastructure may use technical cookies for security and performance.",
+            "WhatsApp, Instagram, and LinkedIn links are subject to the respective platforms' privacy policies."
+          ]
+        },
+        {
+          "title": "Managing Your Preferences",
+          "paragraphs": [
+            "You can set your preferences via the cookie banner shown on your first visit.",
+            "You may delete or block cookies in your browser settings; some site features may not work as a result.",
+            "To change your preferences, clear browser cookies and revisit the site."
+          ]
+        }
+      ]
+    }
   }
 }

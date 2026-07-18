@@ -199,7 +199,8 @@
     "video2Title": "Tiroid ve PKOS Hastaları Beslenmede Nelere Dikkat Etmelidir?",
     "video3Title": "Diyet Önerileri — Stresle Başa Çıkma",
     "video4Title": "Söz Velilerimizde",
-    "video5Title": "Sadece Diyet Yaparak Öbeziteden Kurtulmak Mümkün mü?"
+    "video5Title": "Sadece Diyet Yaparak Öbeziteden Kurtulmak Mümkün mü?",
+    "consentRequired": "Videoyu izlemek için çerez tercihlerinizde işlevsel veya pazarlama çerezlerini kabul edin."
   },
   "faq": {
     "sectionTitle": "Sıkça Sorulan Sorular",
@@ -230,6 +231,8 @@
     "hospitals": "Hastaneler",
     "followUs": "Bizi Takip Edin",
     "memorialProfile": "Memorial Doktor Profili",
+    "privacy": "Gizlilik Politikası",
+    "cookies": "Çerez Politikası",
     "rights": "Tüm hakları saklıdır."
   },
   "contact": {
@@ -296,5 +299,109 @@
     "installButton": "Ana Ekrana Ekle",
     "iosHint": "Safari'de Paylaş → Ana Ekrana Ekle seçeneğini kullanın.",
     "dismiss": "Kapat"
+  },
+  "legal": {
+    "consent": {
+      "title": "Çerez ve Gizlilik Tercihleri",
+      "description": "Deneyiminizi iyileştirmek ve siteyi güvenli şekilde sunmak için çerezler kullanıyoruz. Tercihlerinizi aşağıdan yönetebilirsiniz. Detaylar için",
+      "and": "ve",
+      "privacyLink": "Gizlilik Politikası",
+      "cookieLink": "Çerez Politikası",
+      "acceptAll": "Tümünü Kabul Et",
+      "essentialOnly": "Sadece Zorunlu",
+      "customize": "Ayarlar",
+      "save": "Tercihleri Kaydet",
+      "necessary": "Zorunlu çerezler",
+      "necessaryDesc": "Sitenin çalışması, güvenliği ve tercih kaydı için gereklidir.",
+      "preferences": "İşlevsel çerezler",
+      "preferencesDesc": "PWA, dil tercihi ve gömülü video gibi gelişmiş özellikler için kullanılır.",
+      "analytics": "Analitik çerezler",
+      "analyticsDesc": "Ziyaretçi istatistiklerini anonim olarak anlamamıza yardımcı olur.",
+      "marketing": "Pazarlama çerezleri",
+      "marketingDesc": "Kişiselleştirilmiş içerik ve reklam ölçümü için kullanılır."
+    },
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "updated": "Son güncelleme: 18 Temmuz 2026",
+      "sections": [
+        {
+          "title": "Veri Sorumlusu",
+          "paragraphs": [
+            "Bu web sitesi Uzman Diyetisyen & Psikolog Gözde Akın tarafından işletilmektedir. İletişim: dytgozdeakin@gmail.com, +90 (0) 538 935 92 14.",
+            "6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında veri sorumlusu sıfatıyla hareket edilmektedir."
+          ]
+        },
+        {
+          "title": "Toplanan Veriler",
+          "paragraphs": [
+            "İletişim formu aracılığıyla ad, e-posta, telefon ve mesaj içeriği; teknik loglar aracılığıyla IP adresi, tarayıcı bilgisi ve çerez verileri işlenebilir.",
+            "Randevu ve danışmanlık süreçlerinde paylaştığınız sağlıkla ilgili bilgiler yalnızca hizmet sunumu amacıyla ve gerekli ölçüde işlenir."
+          ]
+        },
+        {
+          "title": "İşleme Amaçları",
+          "paragraphs": [
+            "Randevu taleplerinin yanıtlanması, danışmanlık hizmetinin sunulması, web sitesinin güvenliği ve iyileştirilmesi, yasal yükümlülüklerin yerine getirilmesi.",
+            "Açık rızanız olması hâlinde bilgilendirme ve iletişim faaliyetleri yürütülebilir."
+          ]
+        },
+        {
+          "title": "Hukuki Sebepler",
+          "paragraphs": [
+            "KVKK m.5/2 kapsamında sözleşmenin kurulması veya ifası, hukuki yükümlülük, meşru menfaat; açık rıza gerektiren hallerde ise KVKK m.5/1 uyarınca açık rızanız esas alınır."
+          ]
+        },
+        {
+          "title": "Saklama Süresi",
+          "paragraphs": [
+            "Kişisel veriler, işleme amacının gerektirdiği süre boyunca ve ilgili mevzuatta öngörülen zamanaşımı süreleri kadar saklanır; süre sonunda silinir, yok edilir veya anonim hale getirilir."
+          ]
+        },
+        {
+          "title": "Haklarınız",
+          "paragraphs": [
+            "KVKK m.11 kapsamında; verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltme, silme, itiraz etme ve zararın giderilmesini talep etme haklarına sahipsiniz.",
+            "Başvurularınızı dytgozdeakin@gmail.com adresine iletebilirsiniz."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Çerez Politikası",
+      "updated": "Son güncelleme: 18 Temmuz 2026",
+      "sections": [
+        {
+          "title": "Çerez Nedir?",
+          "paragraphs": [
+            "Çerezler, web sitesini ziyaret ettiğinizde cihazınıza kaydedilen küçük metin dosyalarıdır. Site işlevselliği, güvenlik ve tercihlerin hatırlanması için kullanılabilir."
+          ]
+        },
+        {
+          "title": "Kullandığımız Çerez Türleri",
+          "paragraphs": [
+            "Zorunlu çerezler: Oturum güvenliği, çerez tercihi kaydı ve temel site işlevleri için gereklidir.",
+            "İşlevsel çerezler: PWA kurulumu, dil tercihi ve YouTube gömülü videoları için kullanılır.",
+            "Analitik çerezler: Site trafiğini anonim olarak ölçmek için kullanılabilir (yalnızca onay vermeniz hâlinde).",
+            "Pazarlama çerezleri: Kişiselleştirilmiş içerik ve kampanya ölçümü için kullanılabilir (yalnızca onay vermeniz hâlinde)."
+          ]
+        },
+        {
+          "title": "Üçüncü Taraf Hizmetler",
+          "paragraphs": [
+            "YouTube gömülü videoları Google/YouTube tarafından sağlanır ve kendi çerez politikalarına tabidir.",
+            "Cloudflare altyapısı güvenlik ve performans amacıyla teknik çerezler kullanabilir.",
+            "WhatsApp, Instagram ve LinkedIn bağlantıları ilgili platformların gizlilik politikalarına tabidir."
+          ]
+        },
+        {
+          "title": "Tercihlerinizi Yönetme",
+          "paragraphs": [
+            "İlk ziyaretinizde gösterilen çerez banner'ından tercihlerinizi belirleyebilirsiniz.",
+            "Tarayıcı ayarlarınızdan çerezleri silebilir veya engelleyebilirsiniz; bu durumda bazı site özellikleri çalışmayabilir.",
+            "Tercihlerinizi değiştirmek için tarayıcı çerezlerini temizleyip siteyi yeniden ziyaret edebilirsiniz."
+          ]
+        }
+      ]
+    }
   }
 }

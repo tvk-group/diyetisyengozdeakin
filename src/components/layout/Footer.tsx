@@ -104,6 +104,14 @@ export async function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-white/40">
+          <div className="mb-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <Link href="/gizlilik-politikasi" className="transition-colors hover:text-white/70">
+              {t("privacy")}
+            </Link>
+            <Link href="/cerez-politikasi" className="transition-colors hover:text-white/70">
+              {t("cookies")}
+            </Link>
+          </div>
           © {new Date().getFullYear()} {SITE_CONFIG.name}. {t("rights")}
         </div>
       </div>
