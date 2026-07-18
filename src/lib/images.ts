@@ -29,6 +29,7 @@ export type InstagramReelItem = {
   subtitleKey: string;
   blogSlug?: string;
   href?: string;
+  imageFit?: "cover" | "contain";
 };
 
 export const INSTAGRAM_REELS: InstagramReelItem[] = [
@@ -45,6 +46,7 @@ export const INSTAGRAM_REELS: InstagramReelItem[] = [
     href: "#basari-hikayeleri",
     titleKey: "reel5Title",
     subtitleKey: "reel5Subtitle",
+    imageFit: "contain",
   },
   {
     id: "5-basit-kural",

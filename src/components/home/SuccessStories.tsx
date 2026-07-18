@@ -21,14 +21,16 @@ export async function SuccessStories() {
         subtitle={t("subtitle")}
       />
       <div className="grid items-center gap-10 lg:grid-cols-2">
-        <div className="relative aspect-[4/5] max-h-[600px] overflow-hidden rounded-3xl shadow-xl">
-          <Image
-            src={GOZDE_IMAGES.successEkipIsi}
-            alt={t("storyTitle")}
-            fill
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover"
-          />
+        <div className="mx-auto w-full max-w-lg overflow-hidden rounded-3xl bg-[#FAF8F4] p-3 shadow-xl sm:p-4 md:max-w-none">
+          <div className="relative aspect-[4/5] max-h-[min(70vh,640px)] w-full">
+            <Image
+              src={GOZDE_IMAGES.successEkipIsi}
+              alt={t("storyTitle")}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-contain"
+            />
+          </div>
         </div>
         <div className="space-y-8">
           <div>
