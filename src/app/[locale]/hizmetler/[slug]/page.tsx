@@ -1,8 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Section, SectionHeader } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { ThemedCard } from "@/components/ui/ThemedCard";
+import { ServiceDetailHero } from "@/components/services/ServiceDetailHero";
 import { SITE_CONFIG, SERVICE_SLUGS } from "@/lib/constants";
 import { getService, getLocalizedService } from "@/content/services/services";
 import { getServiceTheme } from "@/lib/card-themes";
@@ -42,7 +43,6 @@ export default async function ServiceDetailPage({ params }: Props) {
   const t = await getTranslations("services");
   const localized = getLocalizedService(service, locale);
   const theme = getServiceTheme(slug as ServiceSlug);
-  const ThemeIcon = theme.Icon;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -70,28 +70,7 @@ export default async function ServiceDetailPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <Section variant="gradient" className="!py-16">
-        <div className="relative mx-auto max-w-3xl overflow-hidden rounded-3xl border border-white/70 p-8 md:p-10">
-          <div className={cn("absolute inset-0 bg-gradient-to-br", theme.gradient)} aria-hidden />
-          <ThemeIcon
-            className={cn("pointer-events-none absolute -right-6 -top-6 h-32 w-32", theme.decorColor)}
-            strokeWidth={1.25}
-            aria-hidden
-          />
-          <div className="relative z-10">
-            <div
-              className={cn(
-                "mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl",
-                theme.iconBg,
-                theme.iconColor
-              )}
-            >
-              <ThemeIcon className="h-6 w-6" strokeWidth={1.75} />
-            </div>
-            <SectionHeader title={localized.name} subtitle={localized.intro} centered={false} />
-          </div>
-        </div>
-      </Section>
+      <ServiceDetailHero theme={theme} title={localized.name} subtitle={localized.intro} />
       <Section>
         <div className="mx-auto max-w-3xl space-y-12">
           <div>
