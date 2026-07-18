@@ -199,7 +199,8 @@
     "video2Title": "À quoi doivent faire attention les patients thyroïdiens et atteints de SOPK en matière de nutrition ?",
     "video3Title": "Conseils alimentaires — Gérer le stress",
     "video4Title": "Paroles de nos parents",
-    "video5Title": "Est-il possible de vaincre l'obésité uniquement par le régime ?"
+    "video5Title": "Est-il possible de vaincre l'obésité uniquement par le régime ?",
+    "consentRequired": "Acceptez les cookies fonctionnels ou marketing dans vos préférences pour lire cette vidéo."
   },
   "faq": {
     "sectionTitle": "Questions fréquentes",
@@ -230,6 +231,8 @@
     "hospitals": "Hôpitaux",
     "followUs": "Suivez-nous",
     "memorialProfile": "Profil médecin Memorial",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Politique relative aux cookies",
     "rights": "Tous droits réservés."
   },
   "contact": {
@@ -296,5 +299,109 @@
     "installButton": "Ajouter à l'écran d'accueil",
     "iosHint": "Dans Safari : Partager → Sur l'écran d'accueil.",
     "dismiss": "Fermer"
+  },
+  "legal": {
+    "consent": {
+      "title": "Préférences cookies et confidentialité",
+      "description": "Nous utilisons des cookies pour améliorer votre expérience et assurer la sécurité du site. Gérez vos préférences ci-dessous. Consultez notre",
+      "and": "et",
+      "privacyLink": "Politique de confidentialité",
+      "cookieLink": "Politique relative aux cookies",
+      "acceptAll": "Tout accepter",
+      "essentialOnly": "Essentiels uniquement",
+      "customize": "Paramètres",
+      "save": "Enregistrer les préférences",
+      "necessary": "Cookies essentiels",
+      "necessaryDesc": "Nécessaires au fonctionnement du site, à la sécurité et à l'enregistrement de vos préférences.",
+      "preferences": "Cookies fonctionnels",
+      "preferencesDesc": "Utilisés pour la PWA, les préférences linguistiques et les vidéos intégrées.",
+      "analytics": "Cookies analytiques",
+      "analyticsDesc": "Nous aident à comprendre les statistiques de visite de manière anonyme.",
+      "marketing": "Cookies marketing",
+      "marketingDesc": "Utilisés pour le contenu personnalisé et la mesure des campagnes."
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "updated": "Dernière mise à jour : 18 juillet 2026",
+      "sections": [
+        {
+          "title": "Responsable du traitement",
+          "paragraphs": [
+            "Ce site est exploité par la Diététicienne Experte & Psychologue Gözde Akın. Contact : dytgozdeakin@gmail.com, +90 (0) 538 935 92 14.",
+            "Les données personnelles sont traitées conformément à la loi turque n° 6698 sur la protection des données personnelles (KVKK)."
+          ]
+        },
+        {
+          "title": "Données collectées",
+          "paragraphs": [
+            "Via le formulaire de contact : nom, e-mail, téléphone et contenu du message. Via les journaux techniques : adresse IP, informations sur le navigateur et données de cookies peuvent être traitées.",
+            "Les informations de santé partagées lors de la consultation ne sont traitées que dans la mesure nécessaire à la fourniture des services."
+          ]
+        },
+        {
+          "title": "Finalités du traitement",
+          "paragraphs": [
+            "Répondre aux demandes de rendez-vous, fournir les services de consultation, assurer la sécurité et l'amélioration du site, et respecter les obligations légales.",
+            "Avec votre consentement explicite, des activités d'information et de communication peuvent être menées."
+          ]
+        },
+        {
+          "title": "Base juridique",
+          "paragraphs": [
+            "Au titre de l'art. 5/2 de la KVKK : exécution du contrat, obligation légale, intérêt légitime. Lorsqu'un consentement explicite est requis, l'art. 5/1 de la KVKK s'applique."
+          ]
+        },
+        {
+          "title": "Durée de conservation",
+          "paragraphs": [
+            "Les données personnelles sont conservées pendant la durée requise par la finalité du traitement et les délais de prescription applicables, puis supprimées, détruites ou anonymisées."
+          ]
+        },
+        {
+          "title": "Vos droits",
+          "paragraphs": [
+            "Au titre de l'art. 11 de la KVKK, vous avez le droit de savoir si vos données sont traitées, de demander des informations, la rectification, la suppression, de vous opposer et de demander réparation.",
+            "Vous pouvez adresser vos demandes à dytgozdeakin@gmail.com."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Politique relative aux cookies",
+      "updated": "Dernière mise à jour : 18 juillet 2026",
+      "sections": [
+        {
+          "title": "Qu'est-ce qu'un cookie ?",
+          "paragraphs": [
+            "Les cookies sont de petits fichiers texte enregistrés sur votre appareil lorsque vous visitez un site web. Ils peuvent servir à la fonctionnalité, à la sécurité et à la mémorisation de vos préférences."
+          ]
+        },
+        {
+          "title": "Types de cookies que nous utilisons",
+          "paragraphs": [
+            "Cookies essentiels : nécessaires à la sécurité de session, à l'enregistrement des préférences cookies et aux fonctions de base du site.",
+            "Cookies fonctionnels : utilisés pour l'installation PWA, les préférences linguistiques et les vidéos YouTube intégrées.",
+            "Cookies analytiques : peuvent servir à mesurer le trafic du site de manière anonyme (uniquement avec votre consentement).",
+            "Cookies marketing : peuvent servir au contenu personnalisé et à la mesure des campagnes (uniquement avec votre consentement)."
+          ]
+        },
+        {
+          "title": "Services tiers",
+          "paragraphs": [
+            "Les vidéos YouTube intégrées sont fournies par Google/YouTube et soumises à leurs politiques en matière de cookies.",
+            "L'infrastructure Cloudflare peut utiliser des cookies techniques pour la sécurité et les performances.",
+            "Les liens vers WhatsApp, Instagram et LinkedIn sont soumis aux politiques de confidentialité des plateformes concernées."
+          ]
+        },
+        {
+          "title": "Gestion de vos préférences",
+          "paragraphs": [
+            "Vous pouvez définir vos préférences via la bannière cookies affichée lors de votre première visite.",
+            "Vous pouvez supprimer ou bloquer les cookies dans les paramètres de votre navigateur ; certaines fonctionnalités du site pourraient alors ne plus fonctionner.",
+            "Pour modifier vos préférences, effacez les cookies du navigateur et revisitez le site."
+          ]
+        }
+      ]
+    }
   }
 }

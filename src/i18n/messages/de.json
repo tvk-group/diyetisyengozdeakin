@@ -199,7 +199,8 @@
     "video2Title": "Worauf sollten Schilddrüsen- und PCOS-Patienten bei der Ernährung achten?",
     "video3Title": "Ernährungstipps — Stress bewältigen",
     "video4Title": "Worte unserer Eltern",
-    "video5Title": "Ist es möglich, Adipositas allein durch Diät zu überwinden?"
+    "video5Title": "Ist es möglich, Adipositas allein durch Diät zu überwinden?",
+    "consentRequired": "Akzeptieren Sie in Ihren Cookie-Einstellungen funktionale oder Marketing-Cookies, um dieses Video abzuspielen."
   },
   "faq": {
     "sectionTitle": "Häufig gestellte Fragen",
@@ -230,6 +231,8 @@
     "hospitals": "Krankenhäuser",
     "followUs": "Folgen Sie uns",
     "memorialProfile": "Memorial Arztprofil",
+    "privacy": "Datenschutzerklärung",
+    "cookies": "Cookie-Richtlinie",
     "rights": "Alle Rechte vorbehalten."
   },
   "contact": {
@@ -296,5 +299,109 @@
     "installButton": "Zum Startbildschirm",
     "iosHint": "In Safari: Teilen → Zum Home-Bildschirm.",
     "dismiss": "Schließen"
+  },
+  "legal": {
+    "consent": {
+      "title": "Cookie- und Datenschutzeinstellungen",
+      "description": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern und die Website sicher bereitzustellen. Verwalten Sie Ihre Einstellungen unten. Weitere Informationen finden Sie in unserer",
+      "and": "und",
+      "privacyLink": "Datenschutzerklärung",
+      "cookieLink": "Cookie-Richtlinie",
+      "acceptAll": "Alle akzeptieren",
+      "essentialOnly": "Nur notwendige",
+      "customize": "Einstellungen",
+      "save": "Einstellungen speichern",
+      "necessary": "Notwendige Cookies",
+      "necessaryDesc": "Erforderlich für den Betrieb der Website, die Sicherheit und das Speichern Ihrer Einstellungen.",
+      "preferences": "Funktionale Cookies",
+      "preferencesDesc": "Werden für PWA, Spracheinstellungen und eingebettete Videos verwendet.",
+      "analytics": "Analyse-Cookies",
+      "analyticsDesc": "Helfen uns, Besucherstatistiken anonym auszuwerten.",
+      "marketing": "Marketing-Cookies",
+      "marketingDesc": "Werden für personalisierte Inhalte und die Messung von Kampagnen verwendet."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "updated": "Zuletzt aktualisiert: 18. Juli 2026",
+      "sections": [
+        {
+          "title": "Verantwortliche Stelle",
+          "paragraphs": [
+            "Diese Website wird betrieben von Expertin für Ernährung & Psychologin Gözde Akın. Kontakt: dytgozdeakin@gmail.com, +90 (0) 538 935 92 14.",
+            "Personenbezogene Daten werden gemäß dem türkischen Gesetz Nr. 6698 zum Schutz personenbezogener Daten (KVKK) verarbeitet."
+          ]
+        },
+        {
+          "title": "Erhobene Daten",
+          "paragraphs": [
+            "Über das Kontaktformular: Name, E-Mail, Telefon und Nachrichteninhalt. Über technische Protokolle können IP-Adresse, Browserinformationen und Cookie-Daten verarbeitet werden.",
+            "Im Rahmen der Beratung mitgeteilte gesundheitsbezogene Informationen werden nur in dem Umfang verarbeitet, der für die Erbringung der Leistungen erforderlich ist."
+          ]
+        },
+        {
+          "title": "Zwecke der Verarbeitung",
+          "paragraphs": [
+            "Beantwortung von Terminanfragen, Erbringung von Beratungsleistungen, Sicherheit und Verbesserung der Website sowie Erfüllung gesetzlicher Verpflichtungen.",
+            "Mit Ihrer ausdrücklichen Einwilligung können Informations- und Kommunikationsmaßnahmen durchgeführt werden."
+          ]
+        },
+        {
+          "title": "Rechtsgrundlage",
+          "paragraphs": [
+            "Gemäß KVKK Art. 5/2: Vertragserfüllung, gesetzliche Verpflichtung, berechtigtes Interesse. Wo eine ausdrückliche Einwilligung erforderlich ist, gilt KVKK Art. 5/1."
+          ]
+        },
+        {
+          "title": "Speicherdauer",
+          "paragraphs": [
+            "Personenbezogene Daten werden für die Dauer aufbewahrt, die der Verarbeitungszweck erfordert, sowie für die geltenden Verjährungsfristen; anschließend werden sie gelöscht, vernichtet oder anonymisiert."
+          ]
+        },
+        {
+          "title": "Ihre Rechte",
+          "paragraphs": [
+            "Gemäß KVKK Art. 11 haben Sie das Recht zu erfahren, ob Ihre Daten verarbeitet werden, Auskunft zu verlangen, Berichtigung, Löschung, Widerspruch und Schadensersatz zu beantragen.",
+            "Anfragen können an dytgozdeakin@gmail.com gerichtet werden."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "updated": "Zuletzt aktualisiert: 18. Juli 2026",
+      "sections": [
+        {
+          "title": "Was sind Cookies?",
+          "paragraphs": [
+            "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie eine Website besuchen. Sie können für Funktionalität, Sicherheit und das Speichern von Einstellungen verwendet werden."
+          ]
+        },
+        {
+          "title": "Arten von Cookies, die wir verwenden",
+          "paragraphs": [
+            "Notwendige Cookies: Erforderlich für Sitzungssicherheit, Speicherung der Cookie-Einstellungen und grundlegende Website-Funktionen.",
+            "Funktionale Cookies: Werden für PWA-Installation, Spracheinstellungen und eingebettete YouTube-Videos verwendet.",
+            "Analyse-Cookies: Können zur anonymen Messung des Website-Traffics verwendet werden (nur mit Ihrer Einwilligung).",
+            "Marketing-Cookies: Können für personalisierte Inhalte und Kampagnenmessung verwendet werden (nur mit Ihrer Einwilligung)."
+          ]
+        },
+        {
+          "title": "Dienste Dritter",
+          "paragraphs": [
+            "Eingebettete YouTube-Videos werden von Google/YouTube bereitgestellt und unterliegen deren Cookie-Richtlinien.",
+            "Die Cloudflare-Infrastruktur kann technische Cookies für Sicherheit und Leistung verwenden.",
+            "Links zu WhatsApp, Instagram und LinkedIn unterliegen den Datenschutzrichtlinien der jeweiligen Plattformen."
+          ]
+        },
+        {
+          "title": "Verwaltung Ihrer Einstellungen",
+          "paragraphs": [
+            "Sie können Ihre Einstellungen über das Cookie-Banner festlegen, das bei Ihrem ersten Besuch angezeigt wird.",
+            "Sie können Cookies in Ihren Browser-Einstellungen löschen oder blockieren; einige Website-Funktionen funktionieren dann möglicherweise nicht.",
+            "Um Ihre Einstellungen zu ändern, löschen Sie die Browser-Cookies und besuchen Sie die Website erneut."
+          ]
+        }
+      ]
+    }
   }
 }

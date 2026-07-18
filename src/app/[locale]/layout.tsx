@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PwaShell } from "@/components/pwa/PwaShell";
+import { LegalShell } from "@/components/legal/LegalShell";
 import { RTL_LOCALES, SITE_CONFIG } from "@/lib/constants";
 import { getAlternates, organizationJsonLd } from "@/lib/seo";
 import "../globals.css";
@@ -118,6 +119,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <main className="flex-1 pb-[calc(4.75rem+env(safe-area-inset-bottom))] md:pb-0">{children}</main>
           <Footer />
           <PwaShell />
+          <LegalShell />
         </NextIntlClientProvider>
       </body>
     </html>

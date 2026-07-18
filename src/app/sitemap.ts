@@ -4,7 +4,16 @@ import { blogPosts } from "@/content/blog/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE_CONFIG.url;
-  const pages = ["", "/hakkimda", "/hizmetler", "/blog", "/online-danismanlik", "/iletisim"];
+  const pages = [
+    "",
+    "/hakkimda",
+    "/hizmetler",
+    "/blog",
+    "/online-danismanlik",
+    "/iletisim",
+    "/gizlilik-politikasi",
+    "/cerez-politikasi",
+  ];
 
   const entries: MetadataRoute.Sitemap = [];
 

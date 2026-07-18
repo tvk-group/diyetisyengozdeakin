@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect } from "react";
+import { allowsPreferences, CONSENT_CHANGE_EVENT } from "@/lib/consent";
 
 export function ServiceWorkerRegister() {
   useEffect(() => {
     if (!("serviceWorker" in navigator)) return;
 
     const register = async () => {
+      if (!allowsPreferences()) return;
       try {
         await navigator.serviceWorker.register("/sw.js", { scope: "/" });
       } catch {
@@ -14,11 +16,17 @@ export function ServiceWorkerRegister() {
       }
     };
 
-    if (document.readyState === "complete") {
-      register();
-    } else {
-      window.addEventListener("load", register, { once: true });
-    }
+    const maybeRegister = () => {
+      if (allowsPreferences()) register();
+    };
+
+    maybeRegister();
+    window.addEventListener(CONSENT_CHANGE_EVENT, maybeRegister);
+    window.addEventListener("load", maybeRegister, { once: true });
+
+    return () => {
+      window.removeEventListener(CONSENT_CHANGE_EVENT, maybeRegister);
+    };
   }, []);
 
   return null;
