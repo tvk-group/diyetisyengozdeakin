@@ -42,8 +42,8 @@ export function ProfileImage({
           <div className="mx-auto mb-3 flex h-24 w-24 items-center justify-center rounded-full bg-white/90 text-3xl font-bold text-navy shadow-lg">
             GA
           </div>
-          <p className="font-heading text-lg font-bold text-navy">Gözde Akın</p>
           <p className="text-sm text-navy/60">{site("expertDietitian")}</p>
+          <p className="font-heading text-lg font-bold text-navy">Gözde Akın</p>
         </div>
       </div>
     );

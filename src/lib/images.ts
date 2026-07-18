@@ -1,14 +1,15 @@
 /**
  * Professional photo assets for Gözde Akın.
- * Place image files in /public/images/gozde/
+ * Place source portrait at public/images/gozde/gozde-portrait-source.jpg
+ * then run: npm run portrait:install
  */
 export const GOZDE_IMAGES = {
   /** Memorial hospital — hero (lab coat) */
   heroMemorial: "/images/gozde/gozde-memorial-hero.jpg",
-  /** Office / consultation portrait — warm, approachable */
-  profileOffice: "/images/gozde/gozde-office-portrait.jpg",
-  /** Profile for schema & about */
-  profile: "/images/gozde/profile.jpg",
+  /** About & online consultation — same professional portrait */
+  profileOffice: "/images/gozde/gozde-memorial-hero.jpg",
+  /** Profile for schema & about preview */
+  profile: "/images/gozde/gozde-memorial-hero.jpg",
   /** Instagram Reel: Akşam Gelen Tatlı Krizi */
   reelTatliKrizi: "/images/gozde/reel-tatli-krizi.jpg",
   /** Instagram Reel: İnsülin Direnci */
