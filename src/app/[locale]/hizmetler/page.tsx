@@ -1,14 +1,14 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { SERVICE_SLUGS } from "@/lib/constants";
-import { ArrowRight } from "lucide-react";
+import { ServiceCard } from "@/components/services/ServiceCard";
+import type { ServiceSlug } from "@/content/services/services";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
 
-const serviceNames: Record<string, Record<string, string>> = {
+const serviceNames: Record<ServiceSlug, Record<string, string>> = {
   "kilo-yonetimi": { tr: "Kilo Yönetimi", en: "Weight Management", de: "Gewichtsmanagement", fr: "Gestion du poids", ru: "Управление весом", ar: "إدارة الوزن" },
   pcos: { tr: "PCOS", en: "PCOS", de: "PCOS", fr: "SOPK", ru: "СПКЯ", ar: "متلازمة تكيس المبايض" },
   "gebelikte-beslenme": { tr: "Gebelikte Beslenme", en: "Pregnancy Nutrition", de: "Schwangerschaftsernährung", fr: "Nutrition pendant la grossesse", ru: "Питание при беременности", ar: "تغذية الحمل" },
@@ -40,19 +40,7 @@ export default async function ServicesPage({ params }: Props) {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {SERVICE_SLUGS.map((slug) => {
           const name = serviceNames[slug]?.[locale] || serviceNames[slug]?.tr || slug;
-          return (
-            <Link
-              key={slug}
-              href={`/hizmetler/${slug}`}
-              className="group glass-card rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-emerald/5"
-            >
-              <h3 className="font-heading mb-2 text-lg font-semibold text-navy group-hover:text-emerald">{name}</h3>
-              <span className="inline-flex items-center gap-1 text-sm font-medium text-memorial-red">
-                {t("bookNow")}
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
-            </Link>
-          );
+          return <ServiceCard key={slug} slug={slug} name={name} cta={t("bookNow")} />;
         })}
       </div>
     </Section>
