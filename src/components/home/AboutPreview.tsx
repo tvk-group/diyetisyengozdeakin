@@ -52,7 +52,7 @@ export async function AboutPreview() {
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-6">
           <div className="glass-card relative aspect-[4/5] overflow-hidden rounded-3xl">
             <ProfileImage
               src={GOZDE_IMAGES.profile}
@@ -61,11 +61,11 @@ export async function AboutPreview() {
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="mt-8 grid grid-cols-2 gap-4">
           {[
             { value: t("stat1Value"), label: t("stat1Label") },
-            { value: t("stat2Value"), label: t("stat2Label") },
             { value: t("stat3Value"), label: t("stat3Label") },
+            { value: t("stat2Value"), label: t("stat2Label") },
             { value: t("stat4Value"), label: t("stat4Label") },
           ].map((stat) => (
             <div key={stat.label} className="glass-card rounded-2xl p-6 text-center">

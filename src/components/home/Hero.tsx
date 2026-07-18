@@ -94,12 +94,12 @@ export function Hero() {
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/80 to-transparent p-6 pt-24">
+              <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-navy/80 to-transparent p-6 pt-20">
                 <p className="font-heading text-xl font-bold text-white">Gözde Akın</p>
                 <p className="text-sm text-white/80">{site("expertDietitian")}</p>
               </div>
             </div>
-            <div className="absolute -bottom-4 -left-4 rounded-2xl bg-white p-4 shadow-xl">
+            <div className="absolute bottom-28 left-4 z-20 rounded-2xl bg-white p-4 shadow-xl">
               <p className="text-2xl font-bold text-emerald">{t("yearsExperience")}</p>
               <p className="text-xs text-navy/60">{t("yearsExperienceLabel")}</p>
             </div>
